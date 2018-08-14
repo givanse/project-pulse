@@ -1,0 +1,26 @@
+{
+  "organizations": [
+    "ripple",
+    "xrp-community",
+    "ripple-unmaintained"
+  ],
+  "repositories": [
+    {"owner": "foxrp", "repo": "rippled-php"},
+    {"owner": "vhpoet", "repo": "awesome-ripple"},
+    {"owner": "vhpoet", "repo": "xrpvalue.com"},
+    {"owner": "WietseWind", "repo": "docker-rippled"},
+    {"owner": "WietseWind", "repo": "docker-rippled-validator"},
+    {"owner": "WietseWind", "repo": "rippled-ws-client"},
+    {"owner": "kevinejohn", "repo": "ripple-lib-rpc-ruby"},
+    {"owner": "miracle2k", "repo": "ripple-python"},
+    {"owner": "miracle2k", "repo": "ripple-federation-python"},
+    {"owner": "singpolyma", "repo": "ripple-haskell"},
+    {"owner": "singpolyma", "repo": "ripple-rails"},
+    {"owner": "rubblelabs", "repo": "ripple"},
+    {"owner": "rubblelabs", "repo": "tx"},
+    {"owner": "xasos", "repo": "RippleKit"},
+    {"owner": "devjin0617", "repo": "ripplectron"},
+    {"owner": "CodeShark", "repo": "RippleGen"},
+    {"owner": "emschwartz", "repo": "ripple-donate-widget"}
+  ]
+}

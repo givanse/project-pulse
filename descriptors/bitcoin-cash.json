@@ -1,0 +1,17 @@
+{
+  "organizations": [
+    "bitcoin-abc",
+    "bitcoincash-wallet",
+    "BitcoinUnlimited",
+    "bitcoinxt",
+    "Bitcoin-com"
+  ],
+  "repositories": [
+    {"owner": "Bitcoin-com", "repo": "bitbox-javascript-sdk"},
+    {"owner": "zquestz", "repo": "bitcoincash"},
+    {"owner": "theantnest", "repo": "bccaddress"},
+    {"owner": "fyookball", "repo": "electrum"},
+    {"owner": "Bitcoin-com", "repo": "Wallet",
+      "fork": {"owner": "bitpay", "repo": "copay"}}
+  ]
+}

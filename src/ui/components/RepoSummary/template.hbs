@@ -1,0 +1,25 @@
+<div class="item repo-summary">
+  <i class="large github middle aligned icon"></i>
+  <div class="content">
+    <a class="header" target="_blank" href="https://github.com/{{@repo.full_name}}">
+      {{#if @repo.fork}}
+        <i class="share alternate icon counterclockwise rotated"></i>
+      {{/if}}
+      {{@repo.full_name}}
+    </a>
+
+    <div class="description">
+
+      <i class="share alternate icon counterclockwise rotated"></i>
+      {{ipad @repo.forks_count 5}}
+
+      <i class="star icon"></i> {{ipad @repo.stargazers_count 5}}
+
+      <i class="code icon"></i> pushed
+      {{!repo.pushed_at 'YYYY-MM-DDTHH:mm:ssZ'}}
+
+      <i class="clipboard check icon"></i>
+      {{!repo.updated_at 'YYYY-MM-DDTHH:mm:ssZ'}}
+    </div>
+  </div>
+</div>

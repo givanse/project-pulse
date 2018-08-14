@@ -1,0 +1,19 @@
+<section class="project-panel">
+  <h2 class="ui header">
+    {{project.name}}
+  </h2>
+
+  <i class="share alternate icon  counterclockwise rotated"></i>
+  {{project.pulse.forks_count}}
+
+  <i class="star icon"></i>
+  {{project.pulse.stargazers_count}}
+
+  <br>
+
+  {{#each reposSorted key="full_name" as |repo|}}
+    <div class="ui relaxed divided list">
+      <RepoSummary @repo={{repo}} />
+    </div>
+  {{/each}}
+</section>

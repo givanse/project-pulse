@@ -1,0 +1,8 @@
+{
+  "organizations": [
+    "bitcoin"
+  ],
+  "repositories": [
+    {"owner": "Samourai-Wallet", "repo": "samourai-wallet-android"}
+  ]
+}

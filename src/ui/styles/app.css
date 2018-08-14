@@ -1,3 +1,12 @@
-h1 {
-  color: #444;
+
+.project-pulse {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+section.project-panel {
+  margin: 2px 4px;
+  padding: 2px;
+  border: 1px solid #000;
+  border-radius: 4px;
 }
