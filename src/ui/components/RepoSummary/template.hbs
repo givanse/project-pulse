@@ -13,7 +13,10 @@
       <i class="share alternate icon counterclockwise rotated"></i>
       {{ipad @repo.forks_count 5}}
 
-      <i class="star icon"></i> {{ipad @repo.stargazers_count 5}}
+      <i class="open folder icon"></i>
+      {{ipad @repo.issuesStats.open 4}}
+      <i class="folder icon"></i>
+      {{ipad @repo.issuesStats.closed 4}}
 
       <i class="code icon"></i> pushed
       {{!repo.pushed_at 'YYYY-MM-DDTHH:mm:ssZ'}}

@@ -21,8 +21,7 @@ export default class ProjectPanel extends Component {
     if (!this.project) return [];
 
     return this.project.repos.sort(function(a, b) {
-      return b.stargazers_count - a.stargazers_count;
-      //return b.forks_count - a.forks_count;
+      return b.forks_count - a.forks_count;
     });
   }
 
