@@ -1,7 +1,7 @@
 
 .project-pulse {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(5, 20%);
 }
 
 section.project-panel {

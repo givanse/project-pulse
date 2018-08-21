@@ -5,7 +5,7 @@ export default class ProjectPanel extends Component {
 
   @tracked project: any;
 
-  @tracked sortKey = 'stargazers';
+  @tracked sortKey = 'forkCount';
 
   constructor(options) {
     super(options);
@@ -21,7 +21,7 @@ export default class ProjectPanel extends Component {
     if (!this.project) return [];
 
     return this.project.repos.sort(function(a, b) {
-      return b.forks_count - a.forks_count;
+      return b.forkCount - a.forkCount;
     });
   }
 

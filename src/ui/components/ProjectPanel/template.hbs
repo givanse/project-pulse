@@ -1,10 +1,25 @@
 <section class="project-panel">
   <h2 class="ui header">
-    {{project.name}}
+    {{project.id}}
   </h2>
 
   <i class="share alternate icon  counterclockwise rotated"></i>
-  {{project.pulse.forks_count}}
+  {{project.forkCount}}
+
+  <i class="history icon"></i>
+  {{ipad project.commits 4}}
+
+  <br>
+
+  <i class="exclamation circle icon green" title="open issues"></i>
+  {{ipad project.issuesOpen 4}}
+  <i class="code icon green" title="open pull requests"></i>
+  {{ipad project.prsOpen 4}}
+  <br>
+  <i class="exclamation circle icon red" title="closed issues"></i>
+  {{ipad project.issuesClosed 4}}
+  <i class="code icon red" title="closed pull requests"></i>
+  {{ipad project.prsClosed 4}}
 
   <br>
 

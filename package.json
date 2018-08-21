@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "node lib/generate-jsons; ember build -prod",
+    "full-build": "node lib/generate-jsons; ember build -prod",
+    "build": "ember build",
     "start": "ember server",
     "test": "ember test"
   },
