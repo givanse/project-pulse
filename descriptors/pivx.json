@@ -1,0 +1,8 @@
+{
+  "organizations": [
+    "pivx"
+  ],
+  "repositories": [
+    {"owner": "PIVX-Project", "repo": "pivx"}
+  ]
+}

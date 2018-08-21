@@ -1,0 +1,9 @@
+{
+  "organizations": [
+    "monero-integrations"
+  ],
+  "repositories": [
+    {"owner": "monero-project", "repo": "monero"},
+    {"owner": "m2049r", "repo": "xmrwallet"}
+  ]
+}
