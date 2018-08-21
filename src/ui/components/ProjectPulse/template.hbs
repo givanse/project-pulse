@@ -1,4 +1,15 @@
-<h1 class="ui heder">Project Pulse</h1>
+
+<div class="ui clearing">
+  <h1 class="ui left floated header">
+    Cryptocurrency Project Pulse
+  </h1>
+  <h1 class="ui left floated header">
+    <input placeholder="type in a project name"
+           onkeydown={{action addProject}} />
+  </h1>
+</div>
+
+<div style="clear: both;"></div>
 
 <div class="project-pulse">
   {{#each projectNames key="@index" as |projectName|}}

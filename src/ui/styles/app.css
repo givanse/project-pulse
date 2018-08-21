@@ -10,3 +10,7 @@ section.project-panel {
   border: 1px solid #000;
   border-radius: 4px;
 }
+
+.window.close.outline.icon {
+  cursor: pointer;
+}

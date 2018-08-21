@@ -1,7 +1,15 @@
 <section class="project-panel">
-  <h2 class="ui header">
-    {{project.id}}
-  </h2>
+
+  <div class="ui clearing">
+    <h3 class="ui left floated header">
+      {{project.id}}
+    </h3>
+    <h3 class="ui right floated header">
+      <i class="window close outline icon" onclick={{action close}}></i>
+    </h3>
+  </div>
+  <br>
+  <br>
 
   <i class="share alternate icon  counterclockwise rotated"></i>
   {{project.forkCount}}
@@ -25,7 +33,13 @@
 
   {{#each reposSorted key="full_name" as |repo|}}
     <div class="ui relaxed divided list">
-      <RepoSummary @repo={{repo}} />
+      <div class="item repo-summary">
+        <i class="large github middle aligned icon"></i>
+        <div class="content">
+          <RepoSummary @repo={{repo}} />
+        </div>
+      </div>
     </div>
   {{/each}}
+  
 </section>

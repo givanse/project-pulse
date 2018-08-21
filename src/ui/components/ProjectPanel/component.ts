@@ -1,5 +1,6 @@
 import Component, {tracked} from '@glimmer/component';
 import fetchProject from '../../../utils/fetch-project';
+import qs from '../../../utils/qs';
 
 export default class ProjectPanel extends Component {
 
@@ -23,6 +24,10 @@ export default class ProjectPanel extends Component {
     return this.project.repos.sort(function(a, b) {
       return b.forkCount - a.forkCount;
     });
+  }
+
+  close() {
+    qs.removeProjectName(this.project.id);
   }
 
 }
