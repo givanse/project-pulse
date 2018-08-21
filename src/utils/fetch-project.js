@@ -1,4 +1,6 @@
 
+const BASE = window.location.origin;
+
 function fetchjson(url) {
   return fetch(url, {
     headers: {
@@ -15,5 +17,5 @@ function fetchjson(url) {
 }
 
 export default function(projectName) {
-  return fetchjson(`/projects/${projectName}.json`);
+  return fetchjson(`${BASE}/projects/${projectName}.json`);
 }
