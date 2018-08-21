@@ -1,6 +1,4 @@
 
-const BASE = 'http://localhost:4200';
-
 function fetchjson(url) {
   return fetch(url, {
     headers: {
@@ -17,5 +15,5 @@ function fetchjson(url) {
 }
 
 export default function(projectName) {
-  return fetchjson(`${BASE}/projects/${projectName}.json`);
+  return fetchjson(`/projects/${projectName}.json`);
 }
