@@ -1,5 +1,7 @@
+import {computerFriendly} from './name-helpers';
 
 function addProjectName(projectName) {
+  projectName = computerFriendly(projectName);
   window.location.search += `,${projectName}`;
 }
 
@@ -10,6 +12,8 @@ function projectNames() {
 }
 
 function removeProjectName(projectName) {
+  projectName = computerFriendly(projectName);
+
   const names = projectNames();
 
   let qs = '?projects=';

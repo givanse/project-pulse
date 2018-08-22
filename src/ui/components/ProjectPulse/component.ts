@@ -1,12 +1,17 @@
 import Component, { tracked } from '@glimmer/component';
 import qs from '../../../utils/qs';
 import names from '../../../utils/names';
+import {humanFriendly} from '../../../utils/name-helpers';
 
 export default class ProjectPulse extends Component {
 
   @tracked invalidName: string;
 
   didInsertElement() {
+    for (const obj of names) {
+      obj.title = humanFriendly(obj.title);
+    }
+
     //const input = this.bounds.firstNode.querySelector('.ui.search');
     const input = $('.ui.search');
     input

@@ -1,3 +1,4 @@
+import {computerFriendly} from './name-helpers';
 
 const BASE = window.location.origin;
 
@@ -17,5 +18,6 @@ function fetchjson(url) {
 }
 
 export default function(projectName) {
+  projectName = computerFriendly(projectName); 
   return fetchjson(`${BASE}/projects/${projectName}.json`);
 }
