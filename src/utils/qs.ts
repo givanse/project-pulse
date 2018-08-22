@@ -10,8 +10,18 @@ function projectNames() {
 }
 
 function removeProjectName(projectName) {
-  let qs = window.location.search;
-  qs = qs.replace(`,${projectName}`, '');
+  const names = projectNames();
+
+  let qs = '?projects=';
+  for (const name of names) {
+    if (name === projectName) {
+      continue;
+    } else {
+      qs += name + ',';    
+    }
+  }
+  qs = qs.substr(0, qs.length - 1);
+  
   window.location.search = qs;
 }
 
