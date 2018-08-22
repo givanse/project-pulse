@@ -1,0 +1,24 @@
+{
+  "organizations": [
+  ],
+  "repositories": [
+    {"owner": "input-output-hk", "repo": "cardano-sl"},
+    {"owner": "input-output-hk", "repo": "cardanodocs.com"},
+    {"owner": "input-output-hk", "repo": "cardano-crypto"},
+    {"owner": "input-output-hk", "repo": "rust-cardano"},
+    {"owner": "input-output-hk", "repo": "cardano-docs.iohk.io"},
+    {"owner": "input-output-hk", "repo": "cardano-sl-explorer"},
+    {"owner": "input-output-hk", "repo": "js-cardano-wasm"},
+    {"owner": "input-output-hk", "repo": "cardano-sl-style-guides"},
+    {"owner": "input-output-hk", "repo": "cardano-report-server"},
+    {"owner": "input-output-hk", "repo": "cardano-docs"},
+    {"owner": "input-output-hk", "repo": "project-icarus-chrome"},
+    {"owner": "input-output-hk", "repo": "project-icarus-importer"},
+    {"owner": "input-output-hk", "repo": "cardano-diagnosis-program"},
+    {"owner": "input-output-hk", "repo": "theseus"},
+    {"owner": "input-output-hk", "repo": "project-icarus-backend-service"},
+    {"owner": "input-output-hk", "repo": "cardano-updater"},
+    {"owner": "input-output-hk", "repo": "cardano-cli"},
+    {"owner": "input-output-hk", "repo": "log-classifier"}
+  ]
+}
