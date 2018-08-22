@@ -1,18 +1,27 @@
 <a class="header" target="_blank" title={{@repo.description}}
-    href="https://github.com/{{@repo.nameWithOwner}}">
+   href="https://github.com/{{@repo.nameWithOwner}}">
   {{#if @repo.isFork}}
-    <i class="share alternate icon counterclockwise rotated"></i>
+    <i class="fork icon"></i>
   {{/if}}
   {{@repo.nameWithOwner}}
 </a>
+{{#if @repo.isFork}}
+  <small>forked from</small>
+  <a class="" target="_blank" title="parent {{@repo.parent.nameWithOwner}}"
+     href="https://github.com/{{@repo.parent.nameWithOwner}}">
+     {{@repo.parent.nameWithOwner}}
+  </a>
+{{/if}}
 
 <div class="description">
-
-  <i class="share alternate icon counterclockwise rotated"></i>
+  <i class="fork icon"></i>
   {{ipad @repo.forkCount 5}}
 
   <i class="history icon"></i>
   {{ipad @repo.master.commits.history.totalCount 4}}
+
+  <i class="star outline icon"></i>
+  {{ipad @repo.stargazers.totalCount 4}}
 
   <br>
 

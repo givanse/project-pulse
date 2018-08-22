@@ -1,45 +1,48 @@
-<section class="project-panel">
+<div class="ui clearing">
+  <h3 class="ui left floated header">
+    {{project.id}}
+  </h3>
+  <button class="compact circular ui icon button right floated"
+          onclick={{action close}}>
+    <i class="times icon"
+        title="remove project"></i>
+  </button>
+</div>
+<br>
+<br>
 
-  <div class="ui clearing">
-    <h3 class="ui left floated header">
-      {{project.id}}
-    </h3>
-    <h3 class="ui right floated header">
-      <i class="window close outline icon" onclick={{action close}}></i>
-    </h3>
-  </div>
-  <br>
-  <br>
+<i class="fork icon"></i>
+{{project.forkCount}}
 
-  <i class="share alternate icon  counterclockwise rotated"></i>
-  {{project.forkCount}}
+<i class="history icon"></i>
+{{ipad project.commits 4}}
 
-  <i class="history icon"></i>
-  {{ipad project.commits 4}}
+<i class="star outline icon"></i>
+{{ipad project.stargazers 4}}
 
-  <br>
+<br>
 
-  <i class="exclamation circle icon green" title="open issues"></i>
-  {{ipad project.issuesOpen 4}}
-  <i class="code icon green" title="open pull requests"></i>
-  {{ipad project.prsOpen 4}}
-  <br>
-  <i class="exclamation circle icon red" title="closed issues"></i>
-  {{ipad project.issuesClosed 4}}
-  <i class="code icon red" title="closed pull requests"></i>
-  {{ipad project.prsClosed 4}}
+<i class="exclamation circle icon green" title="open issues"></i>
+{{ipad project.issuesOpen 4}}
+<i class="code icon green" title="open pull requests"></i>
+{{ipad project.prsOpen 4}}
+<br>
+<i class="exclamation circle icon red" title="closed issues"></i>
+{{ipad project.issuesClosed 4}}
+<i class="code icon red" title="closed pull requests"></i>
+{{ipad project.prsClosed 4}}
 
-  <br>
+<br>
+<br>
+<div class="ui fitted divider"></div>
 
-  {{#each reposSorted key="full_name" as |repo|}}
-    <div class="ui relaxed divided list">
-      <div class="item repo-summary">
-        <i class="large github middle aligned icon"></i>
-        <div class="content">
-          <RepoSummary @repo={{repo}} />
-        </div>
+{{#each reposSorted key="full_name" as |repo|}}
+  <div class="ui relaxed divided list">
+    <div class="item">
+      <div class="content">
+        <RepoSummary @repo={{repo}} />
       </div>
     </div>
-  {{/each}}
-  
-</section>
+  </div>
+  <div class="ui fitted divider"></div>
+{{/each}}

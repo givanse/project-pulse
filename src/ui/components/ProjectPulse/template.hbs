@@ -1,18 +1,39 @@
+<header class="ui segment grid">
+  <div class="four wide column">
+    <h2 class="ui header">
+      Cryptocurrency Project Pulse
+    </h2>
+  </div>
 
-<div class="ui clearing">
-  <h1 class="ui left floated header">
-    Cryptocurrency Project Pulse
-  </h1>
-  <h1 class="ui left floated header">
-    <input placeholder="type in a project name"
-           onkeydown={{action addProject}} />
-  </h1>
-</div>
+  <div class="three wide column">
+    <div class="ui search">
+      <div class="ui icon input big">
+        <input type="text"
+                class="prompt"
+                placeholder="project name"
+                onchange={{action addProject}} />
+        <i class="plus icon"></i>
+      </div>
+      <div class="results"></div>
+    </div>
+  </div>
 
-<div style="clear: both;"></div>
+  <div class="three wide column middle aligned content">
+    {{#if invalidName}}
+      `{{invalidName}}` is not available,
+      <a target="_blank" 
+         href="https://github.com/givanse/project-pulse/tree/master/descriptors">you can add it here</a>
+    {{/if}}
+  </div>
 
-<div class="project-pulse">
+</header>
+
+<div class="ui cards">
   {{#each projectNames key="@index" as |projectName|}}
-    <ProjectPanel @projectName={{projectName}} />
+    <div class="card">
+      <div class="content">
+        <ProjectPanel @projectName={{projectName}} />
+      </div>
+    </div>
   {{/each}}
 </div>

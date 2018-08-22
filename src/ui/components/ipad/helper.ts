@@ -1,7 +1,7 @@
 // integer padding
 export default function ipad(params) {
   const int = params[0];
-  if (!int) return;
+  if (!int) return 0;
 
   let str = int.toLocaleString('en', {useGrouping: true});
   const width = params[1];
