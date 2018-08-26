@@ -32,7 +32,7 @@
   {{#each projectNames key="@index" as |projectName|}}
     <div class="card">
       <div class="content">
-        <ProjectPanel @projectName={{projectName}} />
+        <ProjectPanel @projectName={{projectName}} @close={{action removeProject}} />
       </div>
     </div>
   {{/each}}

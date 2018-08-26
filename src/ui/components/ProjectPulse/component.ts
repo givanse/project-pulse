@@ -1,17 +1,29 @@
 import Component, { tracked } from '@glimmer/component';
-import qs from '../../../utils/qs';
+import navigation from '../../../utils/navigation';
 import names from '../../../utils/names';
 import {humanFriendly} from '../../../utils/name-helpers';
+import {cloneAndRemoveString} from '../../../utils';
+
+for (const obj of names) {
+  obj.title = humanFriendly(obj.title);
+}
 
 export default class ProjectPulse extends Component {
 
   @tracked invalidName: string;
 
-  didInsertElement() {
-    for (const obj of names) {
-      obj.title = humanFriendly(obj.title);
-    }
+  constructor(options) {
+    super(options);
 
+    window.onpopstate = (/*event*/) => {
+      this.projectNames = history.state.projectNames;
+    };
+
+    const state = navigation.replaceStateWithQs();
+    this.projectNames = state.projectNames;
+  }
+
+  _populateSearchInput() {
     //const input = this.bounds.firstNode.querySelector('.ui.search');
     const input = $('.ui.search');
     input
@@ -20,8 +32,8 @@ export default class ProjectPulse extends Component {
     });
   }
 
-  get projectNames() {
-    return qs.projectNames();
+  didInsertElement() {
+    this._populateSearchInput();
   }
 
   addProject(event) {
@@ -37,12 +49,25 @@ export default class ProjectPulse extends Component {
 
     if (validName) {
       this.invalidName = undefined;
-      qs.addProjectName(name);
+      this._addProject(name);
     } else {
       this.invalidName = name;
     }
 
     event.target.value = '';
+  }
+
+  @tracked projectNames:string[];
+
+  _addProject(projectName:string) {
+    navigation.addProjectName(projectName);
+    this.projectNames = this.projectNames.concat([projectName]);
+  }
+
+  removeProject(projectName:string) {
+    navigation.removeProjectName(projectName);
+    const r = cloneAndRemoveString(projectName, this.projectNames);
+    this.projectNames = r;
   }
 
 }
