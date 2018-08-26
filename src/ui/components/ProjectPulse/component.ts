@@ -70,4 +70,12 @@ export default class ProjectPulse extends Component {
     this.projectNames = r;
   }
 
+  @tracked repos:any[];
+  @tracked asideProjectName:string;
+
+  showRepos(projectName, repos) {
+    this.asideProjectName = projectName;
+    this.repos = repos;
+  }
+
 }

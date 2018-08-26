@@ -28,12 +28,33 @@
 
 </header>
 
-<div class="ui cards">
-  {{#each projectNames key="@index" as |projectName|}}
-    <div class="card">
-      <div class="content">
-        <ProjectPanel @projectName={{projectName}} @close={{action removeProject}} />
+<div class="ui grid">
+  <div class="{{if repos 'thirteen' 'sixteen'}} wide column">
+  <div class="ui seven cards">
+    {{#each projectNames key="@index" as |projectName|}}
+      <div class="card">
+        <ProjectPanel @projectName={{projectName}}
+                      @close={{action removeProject}} 
+                      @showRepos={{action showRepos}} />
       </div>
-    </div>
-  {{/each}}
+    {{/each}}
+  </div>
+  </div>
+
+  <aside class="three wide column">
+    <h2 class="ui header">
+      {{asideProjectName}}
+    </h2>
+
+    {{#each repos key="nameWithOwner" as |repo|}}
+      <div class="ui relaxed divided list">
+        <div class="item">
+          <div class="content">
+            <RepoSummary @repo={{repo}} />
+          </div>
+        </div>
+      </div>
+      <div class="ui fitted divider"></div>
+    {{/each}}
+  </aside>
 </div>

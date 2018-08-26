@@ -3,3 +3,11 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+.right.floated.times.circle.outline.icon {
+  color: #909090;
+}
+.right.floated.times.circle.outline.icon:hover {
+  color: red;
+  cursor: pointer;
+}

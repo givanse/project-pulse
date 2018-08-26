@@ -3,7 +3,7 @@ import fetchProject from '../../../utils/fetch-project';
 
 export default class ProjectPanel extends Component {
 
-  @tracked project: any;
+  @tracked project:any = null;
 
   @tracked sortKey = 'forkCount';
 
@@ -15,7 +15,7 @@ export default class ProjectPanel extends Component {
   async fetchProject(projectName:string):Promise<void> {
     this.project = await fetchProject(projectName);
   }
-
+/*
   @tracked('project', 'sortKey')
   get reposSorted() {
     if (!this.project) return [];
@@ -24,5 +24,6 @@ export default class ProjectPanel extends Component {
       return b.forkCount - a.forkCount;
     });
   }
+  */
 
 }

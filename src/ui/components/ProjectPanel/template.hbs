@@ -1,53 +1,46 @@
-<div class="ui clearing">
-  <h3 class="ui left floated header">
-    {{project.id}}
-  </h3>
-  <button class="compact circular ui icon button right floated"
-          onclick={{action @close project.id}}>
-    <i class="times icon"
-        title="remove project"></i>
-  </button>
+
+{{#if project}}
+<div class="content">
+  <i class="right floated times circle outline icon large"
+     title="remove project"
+     onclick={{action @close project.id}}></i>
+  <div class="header">{{project.id}}</div>
+  <div class="ui divider"></div>
+
+  <i class="fork icon"></i>
+  {{project.forkCount}}
+  <br>
+  <i class="history icon"></i>
+  {{ipad project.commits 4}}
+  <br>
+  <i class="star outline icon"></i>
+  {{ipad project.stargazers 4}}
+  <br>
+  <i class="eye icon"></i>
+  {{ipad project.watchers 4}}
+  <br>
+  <i class="exclamation circle icon green" title="open issues"></i>
+  {{ipad project.issuesOpen 4}}
+  <i class="exclamation circle icon red" title="closed issues"></i>
+  {{ipad project.issuesClosed 4}}
+  <br>
+  <i class="pull request icon green" title="open pull requests">PR</i>
+  {{ipad project.prsOpen 4}}
+  <i class="pull request icon red" title="closed pull requests">PR</i>
+  {{ipad project.prsClosed 4}}
 </div>
-<br>
-<br>
 
-<i class="fork icon"></i>
-{{project.forkCount}}
-
-<i class="history icon"></i>
-{{ipad project.commits 4}}
-
-<br>
-
-<i class="star outline icon"></i>
-{{ipad project.stargazers 4}}
-
-<i class="eye icon"></i>
-{{ipad project.watchers 4}}
-
-<br>
-
-<i class="exclamation circle icon green" title="open issues"></i>
-{{ipad project.issuesOpen 4}}
-<i class="pull request icon green" title="open pull requests">PR</i>
-{{ipad project.prsOpen 4}}
-<br>
-<i class="exclamation circle icon red" title="closed issues"></i>
-{{ipad project.issuesClosed 4}}
-<i class="pull request icon red" title="closed pull requests">PR</i>
-{{ipad project.prsClosed 4}}
-
-<br>
-<br>
-<div class="ui fitted divider"></div>
-
-{{#each reposSorted key="full_name" as |repo|}}
-  <div class="ui relaxed divided list">
-    <div class="item">
-      <div class="content">
-        <RepoSummary @repo={{repo}} />
-      </div>
-    </div>
+  <div class="ui bottom attached button"
+       onclick={{action @showRepos project.id project.repos}}>
+    <span class="right floated">
+      <i class="github icon large"
+          title="github repositories"></i>
+      {{project.repos.length}} Repos
+    </span>
   </div>
-  <div class="ui fitted divider"></div>
-{{/each}}
+
+{{else}}
+  <br>
+  <div class="ui active centered inline loader middle aligned"></div>
+  <br>
+{{/if}}
