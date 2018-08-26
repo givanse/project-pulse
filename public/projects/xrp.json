@@ -1,0 +1,4692 @@
+{
+  "id": "xrp",
+  "repos": [
+    {
+      "nameWithOwner": "ripple/rippled-subtrees",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-06-04T15:19:32Z",
+      "description": "Ripple forks of external repositories",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-demurrage-tool",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-01-29T02:04:25Z",
+      "description": "webpage that demonstrates calculating values for currencies with built-in demurrage/interest using ripple-lib",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/docker-fdb-client",
+      "forkCount": 5,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "pesho/docker-fdb"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-02-27T23:27:10Z",
+      "description": "FoundationDB client Docker image",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 14
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-authd",
+      "forkCount": 18,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-09-12T05:07:43Z",
+      "description": "Ripple peer-assisted key derivation server",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 22
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 6
+      }
+    },
+    {
+      "nameWithOwner": "ripple/bookshelf-encrypted-fields",
+      "forkCount": 6,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-01-30T03:07:01Z",
+      "description": "Encrypted fields plugin for Bookshelf.js",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 7
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/crawler-api",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-08-04T22:23:11Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 41
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 2
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/rippled-peers-api",
+      "forkCount": 6,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-08-25T22:57:25Z",
+      "description": "http/json service for querying rippled peer network data",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/x-address-codec",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-10T11:51:31Z",
+      "description": "Encodes byte arrays into strings of custom alphabets, such as ripple's base58",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 36
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-orderbook",
+      "forkCount": 4,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-12-17T00:18:51Z",
+      "description": "Orderbook Extension for Ripple-Lib",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 2
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/validator-registry-webapp",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-19T20:04:14Z",
+      "description": "Human User Interface for Rippled Validator Registry - Angular.js",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 124
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 7
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 2
+      }
+    },
+    {
+      "nameWithOwner": "ripple/validator-registry-api",
+      "forkCount": 8,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-11T00:03:18Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 226
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 2
+      },
+      "prsClosed": {
+        "totalCount": 9
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-lib-cli",
+      "forkCount": 8,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-12-16T21:28:30Z",
+      "description": "cli on top of ripple-lib",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 2
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/sjcl-codec",
+      "forkCount": 4,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-09-17T04:53:15Z",
+      "description": "module.exports = sjcl.codec;  // a lite build",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 3
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/grafana-file-datasource",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-04-27T22:56:36Z",
+      "description": "Grafana datasource plugin for generating template variables from a JSON file",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 2
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/passport-ripple",
+      "forkCount": 4,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-12-31T19:43:35Z",
+      "description": "Passport Ripple ID OAuth 2 Plugin",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 4
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/salt-pillar-kvdn",
+      "forkCount": 5,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "cinterloper/salt-pillar-kvdn"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-12-09T20:16:46Z",
+      "description": "Saltstack KVDN pillar plugin",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 47
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple.github.io",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-05-18T21:06:59Z",
+      "description": "Public GitHub website",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 4
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/crawler-hbase",
+      "forkCount": 8,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-09-11T18:43:29Z",
+      "description": "a module to interact with the crawler tables stored in hbase ",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 30
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/salt-formula-prometheus",
+      "forkCount": 3,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "salt-formulas/salt-formula-prometheus"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-04-05T22:15:16Z",
+      "description": "Salt Formula for Prometheus monitoring",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 6
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/saltutils",
+      "forkCount": 4,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-06-27T21:52:38Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 4
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/oauth2orize",
+      "forkCount": 3,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "jaredhanson/oauth2orize"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-12-11T17:20:29Z",
+      "description": "OAuth 2.0 authorization server toolkit for Node.js.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 273
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/sequelize",
+      "forkCount": 4,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "gintsgints/sequelize"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-01-08T17:14:42Z",
+      "description": "Sequelize is an easy-to-use multi sql dialect ORM for Node.js & io.js. It currently supports MySQL, MariaDB, SQLite, PostgreSQL and MSSQL.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 6621
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-data-api",
+      "forkCount": 37,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-02-26T22:39:33Z",
+      "description": "Ripplecharts API (DEPRECATED)",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 956
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 2
+      },
+      "issuesOpen": {
+        "totalCount": 8
+      },
+      "issuesClosed": {
+        "totalCount": 13
+      },
+      "stargazers": {
+        "totalCount": 45
+      }
+    },
+    {
+      "nameWithOwner": "ripple/javascript-style-guide",
+      "forkCount": 19,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "airbnb/javascript"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-03-17T20:48:57Z",
+      "description": "JavaScript Style Guide",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 247
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 5
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 13
+      }
+    },
+    {
+      "nameWithOwner": "ripple/openldap-deb",
+      "forkCount": 4,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "ltb-project/openldap-deb"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-04-07T17:25:53Z",
+      "description": "Debian packages for OpenLDAP",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 43
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-blobvault",
+      "forkCount": 38,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2012-10-17T08:40:14Z",
+      "description": "Server for storing persistent data for Ripple clients",
+      "releases": {
+        "last": [
+          {
+            "name": "1.0.0 Oct 15 2014",
+            "updatedAt": "2014-10-15T19:20:26Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 535
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 3
+      },
+      "prsClosed": {
+        "totalCount": 9
+      },
+      "issuesOpen": {
+        "totalCount": 5
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 33
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-domain-verifier",
+      "forkCount": 13,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-11T21:05:57Z",
+      "description": "checks domains' ripple.txt and corresponding account root for connection",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 36
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple/sjcl-extended",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-04T09:01:00Z",
+      "description": "sjcl extended with extra functionality",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 4
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/js-ilp-plugin-ripple",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-10-22T01:29:05Z",
+      "description": "ILP ledger plugin for transactions through Rippled",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 19
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 7
+      }
+    },
+    {
+      "nameWithOwner": "ripple/chef-client",
+      "forkCount": 3,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "chef-cookbooks/chef-client"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-10-22T19:32:24Z",
+      "description": "Development repository for Chef Client cookbook",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 635
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/chef-os-hardening",
+      "forkCount": 3,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "dev-sec/chef-os-hardening"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-12-09T23:30:19Z",
+      "description": "This chef cookbook provides numerous security-related configurations, providing all-round base protection.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 400
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/docker-fdb-server",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-02-27T23:51:00Z",
+      "description": "FoundationDB server Docker image",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 14
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple/react-stockcharts",
+      "forkCount": 7,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "rrag/react-stockcharts"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-12-18T19:04:54Z",
+      "description": "Highly customizable stock charts with ReactJS and d3",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 958
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 12
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-hashes",
+      "forkCount": 11,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-10-14T20:51:18Z",
+      "description": "Methods to hash Ripple objects",
+      "releases": {
+        "last": [
+          {
+            "name": "v0.3.1",
+            "updatedAt": "2017-11-03T01:57:16Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 12
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 2
+      }
+    },
+    {
+      "nameWithOwner": "ripple/rippled-network-crawler",
+      "forkCount": 15,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-03T22:58:07Z",
+      "description": "Crawls all nodes in rippled network",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 189
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 7
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 11
+      },
+      "stargazers": {
+        "totalCount": 12
+      }
+    },
+    {
+      "nameWithOwner": "ripple/vault-pki-formula",
+      "forkCount": 1,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-03-23T00:05:58Z",
+      "description": "SaltStack formula to issue and update certificates using Hashicorp's Vault.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 47
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 4
+      }
+    },
+    {
+      "nameWithOwner": "ripple/crawl-reporter",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-08-05T18:14:12Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 49
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 4
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/salt-runner-vault-pki",
+      "forkCount": 2,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-12-05T22:10:22Z",
+      "description": "Server-side component of the Vault PKI certificate distribution system.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 18
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple/Downloads",
+      "forkCount": 15,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-07-06T01:28:15Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": null,
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 4
+      }
+    },
+    {
+      "nameWithOwner": "ripple/react-stockcharts-build",
+      "forkCount": 3,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-12-29T22:20:25Z",
+      "description": "Compiled version of react stockcharts",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 10
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/salt-pillar-vault",
+      "forkCount": 11,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-03-09T20:12:59Z",
+      "description": "Saltstack external pillar for Hashicorp Vault with flexible minion targeting",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 25
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 2
+      },
+      "issuesClosed": {
+        "totalCount": 4
+      },
+      "stargazers": {
+        "totalCount": 18
+      }
+    },
+    {
+      "nameWithOwner": "ripple/validator-keys-tool",
+      "forkCount": 12,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-12-05T22:07:38Z",
+      "description": "Generate master and ephemeral rippled validator keys",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 2
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 2
+      }
+    },
+    {
+      "nameWithOwner": "ripple/hbase-client",
+      "forkCount": 8,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-04-12T00:16:49Z",
+      "description": "Hbase client in Nodejs",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 27
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 4
+      }
+    },
+    {
+      "nameWithOwner": "ripple/paychannel_explorer",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-07-02T18:03:03Z",
+      "description": "XRP ledger PaymentChannel Explorer",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-keypairs",
+      "forkCount": 27,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-17T12:54:02Z",
+      "description": "Generates keypairs and addresses for the XRP Ledger using elliptic (JS)",
+      "releases": {
+        "last": [
+          {
+            "name": "0.10.1",
+            "updatedAt": "2017-11-10T23:07:43Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 70
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 4
+      },
+      "issuesOpen": {
+        "totalCount": 4
+      },
+      "issuesClosed": {
+        "totalCount": 7
+      },
+      "stargazers": {
+        "totalCount": 33
+      }
+    },
+    {
+      "nameWithOwner": "ripple/simulator",
+      "forkCount": 14,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-08-04T22:34:33Z",
+      "description": "Ripple consensus simulator",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 4
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 18
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ldap",
+      "forkCount": 4,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "go-ldap/ldap"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-05-05T19:33:17Z",
+      "description": "Basic LDAP v3 functionality for the GO programming language.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 169
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 5
+      }
+    },
+    {
+      "nameWithOwner": "ripple/api-demo",
+      "forkCount": 6,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-08-08T23:09:47Z",
+      "description": "Demonstration and presentation of RippleAPI and rippled.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 8
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 5
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-dot-net",
+      "forkCount": 23,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-12-06T10:18:25Z",
+      "description": "C# code for working with ripple :)",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 82
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 2
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 6
+      },
+      "issuesClosed": {
+        "totalCount": 20
+      },
+      "stargazers": {
+        "totalCount": 35
+      }
+    },
+    {
+      "nameWithOwner": "ripple/rippled-peers-webapp",
+      "forkCount": 10,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-08-25T21:56:13Z",
+      "description": "Web dashboard for rippled peer network data",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 142
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-vault-client",
+      "forkCount": 27,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-11-14T00:29:59Z",
+      "description": "Ripple blobvault client",
+      "releases": {
+        "last": [
+          {
+            "name": "",
+            "updatedAt": "2015-09-30T20:29:22Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 42
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 5
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-ecies",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-01-25T23:05:45Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 7
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-address-codec",
+      "forkCount": 9,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-17T12:58:57Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 34
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 7
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-binary-codec",
+      "forkCount": 16,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-09-30T09:37:05Z",
+      "description": "Convert between json and hex representations of transactions and ledger entries",
+      "releases": {
+        "last": [
+          {
+            "name": "0.1.13 - Add Check, CheckCreate, CheckCash, CheckCancel",
+            "updatedAt": "2018-02-23T20:28:17Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 63
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 6
+      }
+    },
+    {
+      "nameWithOwner": "ripple/passport-client-certificate",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-02-16T21:12:13Z",
+      "description": "Passport strategy for authenticating using client certificates.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 9
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-rest",
+      "forkCount": 92,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-02-05T22:52:44Z",
+      "description": "A RESTful API for submitting payments and monitoring accounts on the Ripple Network",
+      "releases": {
+        "last": [
+          {
+            "name": "1.8.1-rc6",
+            "updatedAt": "2015-09-23T02:58:56Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1439
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 34
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 87
+      },
+      "stargazers": {
+        "totalCount": 78
+      }
+    },
+    {
+      "nameWithOwner": "ripple/rippled-package-builder",
+      "forkCount": 14,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-09-28T18:34:01Z",
+      "description": "reacts to new rippled commits by building rpm packages for distribution",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 248
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 9
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 5
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ilp-plugin-xrp-paychan",
+      "forkCount": 8,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-02-27T12:58:37Z",
+      "description": "Send ILP payments over Ripple using XRP and payment channels (PayChan)",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 162
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 8
+      },
+      "issuesOpen": {
+        "totalCount": 6
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 9
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-lib-extensions",
+      "forkCount": 21,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-12-20T01:48:19Z",
+      "description": "A collection of extensions to ripple-lib",
+      "releases": {
+        "last": [
+          {
+            "name": "ripple-lib-transactionparser v0.7.1",
+            "updatedAt": "2018-07-18T04:51:08Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 76
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 5
+      },
+      "issuesOpen": {
+        "totalCount": 6
+      },
+      "issuesClosed": {
+        "totalCount": 3
+      },
+      "stargazers": {
+        "totalCount": 11
+      }
+    },
+    {
+      "nameWithOwner": "ripple/dactyl",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-02-17T21:14:00Z",
+      "description": "Tools to make enterprise documentation from Markdown sources.",
+      "releases": {
+        "last": [
+          {
+            "name": "Dactyl v0.7.3",
+            "updatedAt": "2018-08-07T22:00:17Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 47
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 2
+      },
+      "issuesOpen": {
+        "totalCount": 12
+      },
+      "issuesClosed": {
+        "totalCount": 16
+      },
+      "stargazers": {
+        "totalCount": 18
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-lib-java",
+      "forkCount": 80,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-09-20T00:09:11Z",
+      "description": "Java version of ripple-lib (work in progress)",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 464
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 13
+      },
+      "issuesOpen": {
+        "totalCount": 32
+      },
+      "issuesClosed": {
+        "totalCount": 34
+      },
+      "stargazers": {
+        "totalCount": 97
+      }
+    },
+    {
+      "nameWithOwner": "ripple/crypto-conditions",
+      "forkCount": 1,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-04-25T15:11:01Z",
+      "description": "A Java implementation of Crypto-Conditions (draft-thomas-crypto-conditions)",
+      "releases": {
+        "last": [
+          {
+            "name": "v1.0.3",
+            "updatedAt": "2018-04-29T22:56:09Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 19
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 8
+      },
+      "issuesClosed": {
+        "totalCount": 7
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple/rippled-historical-database",
+      "forkCount": 41,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-07-24T23:51:55Z",
+      "description": " SQL database as a canonical source of historical data in Ripple.",
+      "releases": {
+        "last": [
+          {
+            "name": "v2.3.2",
+            "updatedAt": "2017-01-05T21:44:19Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1011
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 9
+      },
+      "issuesOpen": {
+        "totalCount": 18
+      },
+      "issuesClosed": {
+        "totalCount": 35
+      },
+      "stargazers": {
+        "totalCount": 62
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-client-desktop",
+      "forkCount": 164,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-10-24T22:25:05Z",
+      "description": "A desktop client for the Ripple payment network built using web technologies",
+      "releases": {
+        "last": [
+          {
+            "name": "Version 1.2.1",
+            "updatedAt": "2015-08-28T18:17:55Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 4250
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 12
+      },
+      "issuesOpen": {
+        "totalCount": 11
+      },
+      "issuesClosed": {
+        "totalCount": 11
+      },
+      "stargazers": {
+        "totalCount": 110
+      }
+    },
+    {
+      "nameWithOwner": "ripple/vl",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-06-22T10:45:45Z",
+      "description": "Archived versions of validator lists published on vl.ripple.com",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 9
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-lib",
+      "forkCount": 296,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-04-25T21:17:19Z",
+      "description": "A JavaScript API for interacting with Ripple in Node.js and the browser",
+      "releases": {
+        "last": [
+          {
+            "name": "1.0.0-beta.5",
+            "updatedAt": "2018-08-11T08:40:30Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 2798
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 12
+      },
+      "prsClosed": {
+        "totalCount": 102
+      },
+      "issuesOpen": {
+        "totalCount": 23
+      },
+      "issuesClosed": {
+        "totalCount": 187
+      },
+      "stargazers": {
+        "totalCount": 717
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-libpp",
+      "forkCount": 24,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2016-08-22T21:50:53Z",
+      "description": "Standalone RCL-compatible transaction signing and serialization library",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 26
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 9
+      },
+      "issuesOpen": {
+        "totalCount": 2
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 9
+      }
+    },
+    {
+      "nameWithOwner": "ripple/bower-ripple",
+      "forkCount": 8,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-08-01T00:17:29Z",
+      "description": "Ripple JavaScript library distribution on bower",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 93
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 10
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-client",
+      "forkCount": 534,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2012-10-16T17:35:52Z",
+      "description": "A UI for the Ripple payment network built using web technologies",
+      "releases": {
+        "last": [
+          {
+            "name": "Version 1.5.2",
+            "updatedAt": "2015-07-13T22:24:02Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 5626
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 8
+      },
+      "prsClosed": {
+        "totalCount": 233
+      },
+      "issuesOpen": {
+        "totalCount": 30
+      },
+      "issuesClosed": {
+        "totalCount": 1152
+      },
+      "stargazers": {
+        "totalCount": 1348
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripplecharts-frontend",
+      "forkCount": 121,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-12-31T20:26:04Z",
+      "description": "RippleCharts front-end using Angular.js and D3",
+      "releases": {
+        "last": [
+          {
+            "name": "2.3.0",
+            "updatedAt": "2017-01-05T21:42:52Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 910
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 25
+      },
+      "issuesOpen": {
+        "totalCount": 10
+      },
+      "issuesClosed": {
+        "totalCount": 13
+      },
+      "stargazers": {
+        "totalCount": 154
+      }
+    },
+    {
+      "nameWithOwner": "ripple/ripple-dev-portal",
+      "forkCount": 127,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-02-28T02:47:58Z",
+      "description": "Ripple developer portal with documentation and examples",
+      "releases": {
+        "last": [
+          {
+            "name": "2015-01-12 Release",
+            "updatedAt": "2015-01-13T01:20:34Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 2084
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 22
+      },
+      "issuesOpen": {
+        "totalCount": 11
+      },
+      "issuesClosed": {
+        "totalCount": 19
+      },
+      "stargazers": {
+        "totalCount": 117
+      }
+    },
+    {
+      "nameWithOwner": "ripple/rippled",
+      "forkCount": 870,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2011-11-07T04:40:15Z",
+      "description": "Decentralized cryptocurrency blockchain daemon implementing the XRP Ledger in C++",
+      "releases": {
+        "last": [
+          {
+            "name": "",
+            "updatedAt": "2018-05-15T13:46:42Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11683
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 15
+      },
+      "prsClosed": {
+        "totalCount": 1879
+      },
+      "issuesOpen": {
+        "totalCount": 147
+      },
+      "issuesClosed": {
+        "totalCount": 319
+      },
+      "stargazers": {
+        "totalCount": 2912
+      }
+    },
+    {
+      "nameWithOwner": "xrp-community/codius-install",
+      "forkCount": 13,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-06-09T00:28:26Z",
+      "description": "Codius Installer For Centos, Ubuntu , Debian ...",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 94
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 4
+      },
+      "issuesClosed": {
+        "totalCount": 17
+      },
+      "stargazers": {
+        "totalCount": 27
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/rippled-telemetry",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-05-27T00:30:49Z",
+      "description": "sensu monitoring service for rippled peer network",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 22
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/validation-subscriber",
+      "forkCount": 1,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-08-24T21:24:34Z",
+      "description": "Subscriber to rippled validations websocket subscription",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 3
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/validation-tracker",
+      "forkCount": 4,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "vahaknp/valtracker"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-03-23T22:49:39Z",
+      "description": "Monitors ripple validators' logs and stores their ledger validations",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 80
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-price-ios",
+      "forkCount": 6,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "kevinejohn/ripple-price-ios"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-12-31T00:03:00Z",
+      "description": "Source code of the app Ripple Price",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 33
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/giving-client",
+      "forkCount": 1,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-04-22T17:39:03Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1447
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/scala-cookbook",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "RiotGamesCookbooks/scala-cookbook"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-10-24T01:19:04Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 38
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/cookbook-application_nodejs",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "mburns/application_nodejs"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-01-23T21:10:54Z",
+      "description": "Chef cookbook for deploying and configuring Node.js applications",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 18
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/opsworks-logstash",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "Springest/opsworks-logstash"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-02-03T22:38:45Z",
+      "description": "Logstash with Kibana 3 on AWS OpsWorks",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 46
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/cookbook-elasticsearch",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "foxycoder/cookbook-elasticsearch"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-02-03T22:35:20Z",
+      "description": "Build ElasticSearch on AmazonLinux",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 29
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/cookbook-ripple-rippled",
+      "forkCount": 2,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "justinlynn/cookbook-ripple-rippled"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-10-25T00:27:18Z",
+      "description": "A Chef Cookbook for Configuring the Ripple Rippled Server",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 4
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/cookbook-ripple-blobvault",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "justinlynn/cookbook-ripple-blobvault"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-10-21T22:02:38Z",
+      "description": "A Chef Cookbook for Configuring the Ripple Blobvault Server",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 1
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/dirsrv-cookbook",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "RiotGamesCookbooks/dirsrv-cookbook"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-08-27T00:03:18Z",
+      "description": "Chef cookbook for 389 Directory Server",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 169
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/kafka-fast",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "gerritjvv/kafka-fast"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-11T17:12:35Z",
+      "description": "fast kafka api for JVM languages implemented in clojure",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 311
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/bower-ripple-vault-client",
+      "forkCount": 1,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-12-03T22:48:20Z",
+      "description": "Ripple Vault Client JavaScript library distribution on bower",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-git-bot",
+      "forkCount": 2,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "geertweening/ripple-git-bot"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-12-08T19:28:13Z",
+      "description": "Handles basic build management for ripple development.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 99
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ci.ripple.com",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-05-29T17:39:25Z",
+      "description": "Code for CI portal",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 4
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/wcg-ripple-giveaway",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-12-30T22:19:03Z",
+      "description": "ComputingForGood.org World Community Grid Giveaway App",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 439
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 5
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/pathfind-test",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-04-29T23:29:30Z",
+      "description": "Script to log pathfind duration",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 8
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-name-application",
+      "forkCount": 1,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-04-18T17:18:18Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 95
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/heroku-buildpack-webassets",
+      "forkCount": 1,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "abhishekmunie/heroku-buildpack-webassets"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-03-04T21:33:02Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/heroku-buildpack-static",
+      "forkCount": 1,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "abhishekmunie/heroku-buildpack-static"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-03-04T19:54:31Z",
+      "description": "Heroku buildpack which serves static files using node.js, express or nginx server.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 56
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-lib-rpc-ruby",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "kevinejohn/ripple-lib-rpc-ruby"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-12-10T23:46:03Z",
+      "description": "Ripple Client Ruby Gem",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 64
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 4
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/merchant-magento",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-08-19T21:11:23Z",
+      "description": "Ripple merchant plugin for Magento shopping cart system.",
+      "releases": {
+        "last": []
+      },
+      "master": null,
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/heroku-buildpack-nginx",
+      "forkCount": 0,
+      "isFork": true,
+      "parent": {
+        "nameWithOwner": "abhishekmunie/heroku-buildpack-nginx"
+      },
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-03-04T22:52:37Z",
+      "description": "A Heroku buildpack for nginx.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 10
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-rest-client",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-03-04T19:43:25Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 227
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 3
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/rippled-dashboard",
+      "forkCount": 3,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-09-05T17:47:15Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 28
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 1
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/rippled-ansible-role",
+      "forkCount": 4,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-04-21T20:43:37Z",
+      "description": "An Ansible role for installing and running rippled",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 24
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 2
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 5
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-rest-ansible",
+      "forkCount": 1,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-02-04T00:55:58Z",
+      "description": "Ansible playbook to configure a ripple-rest server",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 17
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/rippled-apt",
+      "forkCount": 2,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-04-16T15:16:50Z",
+      "description": "Tools for building rippled apt packages",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 3
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/federation-php",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-07-20T23:52:39Z",
+      "description": "Simple PHP federation endpoint with a static JSON dataset",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 6
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 9
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-watch",
+      "forkCount": 15,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-01-31T00:38:32Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 51
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 37
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-client-ios",
+      "forkCount": 26,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-11-08T23:59:18Z",
+      "description": "Ripple iOS Client",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 134
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 3
+      },
+      "stargazers": {
+        "totalCount": 33
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-chart",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-03-13T05:02:31Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 50
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 11
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-graph",
+      "forkCount": 12,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-02-08T22:59:57Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 69
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 7
+      },
+      "issuesClosed": {
+        "totalCount": 11
+      },
+      "stargazers": {
+        "totalCount": 22
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-cli",
+      "forkCount": 7,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2015-06-01T04:20:34Z",
+      "description": "command line interface for money and payments on ripple",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 28
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 2
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 6
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-python-tools",
+      "forkCount": 3,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-02-14T23:19:45Z",
+      "description": "Ledger and Manifest tools for Ripple Consensus Ledger",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 26
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 2
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 0
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ilp-plugin-xrp-escrow",
+      "forkCount": 9,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-04-12T13:26:39Z",
+      "description": null,
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 45
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 9
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 6
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripplecharts",
+      "forkCount": 17,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-06-10T06:14:16Z",
+      "description": "RippleCharts.com Charting Website",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 142
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 2
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 32
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/market-maker",
+      "forkCount": 24,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-09-15T05:31:52Z",
+      "description": "Automatically provide liquidity between XRP and any single issued currency.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 28
+      }
+    },
+    {
+      "nameWithOwner": "ripple-unmaintained/ripple-wallet",
+      "forkCount": 21,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-02-09T04:15:18Z",
+      "description": "Lightweight javascript tool to generate a Ripple wallet.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 48
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 18
+      }
+    },
+    {
+      "nameWithOwner": "foxrp/rippled-php",
+      "forkCount": 5,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-05-17T16:07:23Z",
+      "description": "A PHP library for rippled (XRP Ledger) communication.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 236
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 3
+      },
+      "stargazers": {
+        "totalCount": 15
+      }
+    },
+    {
+      "nameWithOwner": "vhpoet/awesome-ripple",
+      "forkCount": 19,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-11-15T20:43:23Z",
+      "description": "A curated list of Ripple resources",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 96
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 115
+      }
+    },
+    {
+      "nameWithOwner": "vhpoet/xrpvalue.com",
+      "forkCount": 12,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-12-04T03:50:56Z",
+      "description": "http://xrpvalue.com website",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 64
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 3
+      },
+      "stargazers": {
+        "totalCount": 23
+      }
+    },
+    {
+      "nameWithOwner": "WietseWind/docker-rippled",
+      "forkCount": 3,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-02-09T02:46:24Z",
+      "description": "Run a Ripple XRP (rippled) node in a Docker container",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 7
+      }
+    },
+    {
+      "nameWithOwner": "WietseWind/docker-rippled-validator",
+      "forkCount": 4,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-02-08T09:14:39Z",
+      "description": "Run a Ripple XRP (rippled) validator in a Docker container",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 17
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 16
+      }
+    },
+    {
+      "nameWithOwner": "WietseWind/rippled-ws-client",
+      "forkCount": 3,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2018-03-07T18:24:01Z",
+      "description": "Ripple WebSocket Client: lightweight ripple-lib (connection) replacement for rippled",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 27
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 8
+      }
+    },
+    {
+      "nameWithOwner": "kevinejohn/ripple-lib-rpc-ruby",
+      "forkCount": 9,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-11-06T22:34:07Z",
+      "description": "Ripple Client Ruby Gem",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 64
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 1
+      },
+      "issuesClosed": {
+        "totalCount": 3
+      },
+      "stargazers": {
+        "totalCount": 6
+      }
+    },
+    {
+      "nameWithOwner": "miracle2k/ripple-python",
+      "forkCount": 16,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-01-07T21:31:15Z",
+      "description": "Ripple-related routines in Python. Might become a proper client library later.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 99
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 38
+      }
+    },
+    {
+      "nameWithOwner": "miracle2k/ripple-federation-python",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-12-08T21:47:01Z",
+      "description": "ripple/federation-php for Python.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 15
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 5
+      }
+    },
+    {
+      "nameWithOwner": "singpolyma/ripple-haskell",
+      "forkCount": 3,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-04-20T21:24:17Z",
+      "description": "Implementation of Ripple client protocol in Haskell",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 72
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 1
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 2
+      }
+    },
+    {
+      "nameWithOwner": "singpolyma/ripple-rails",
+      "forkCount": 2,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-04-04T23:05:04Z",
+      "description": "Rails integration for Ripple payment notifications.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 8
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 1
+      },
+      "stargazers": {
+        "totalCount": 4
+      }
+    },
+    {
+      "nameWithOwner": "rubblelabs/ripple",
+      "forkCount": 25,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-05-29T13:20:59Z",
+      "description": "Go packages to interact with the Ripple protocol",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 396
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 2
+      },
+      "prsClosed": {
+        "totalCount": 6
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 13
+      },
+      "stargazers": {
+        "totalCount": 49
+      }
+    },
+    {
+      "nameWithOwner": "rubblelabs/tx",
+      "forkCount": 4,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-07-07T19:20:30Z",
+      "description": "Tool for executing transactions on the Ripple network",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 16
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 8
+      },
+      "issuesClosed": {
+        "totalCount": 2
+      },
+      "stargazers": {
+        "totalCount": 13
+      }
+    },
+    {
+      "nameWithOwner": "xasos/RippleKit",
+      "forkCount": 0,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-07-20T23:55:50Z",
+      "description": "Swift iOS interface to the Ripple Consensus Ledger.",
+      "releases": {
+        "last": [
+          {
+            "name": "Initial Release",
+            "updatedAt": "2017-07-27T00:09:52Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 11
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 4
+      }
+    },
+    {
+      "nameWithOwner": "devjin0617/ripplectron",
+      "forkCount": 13,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2017-07-28T13:57:55Z",
+      "description": ":credit_card: ripple wallet for electron",
+      "releases": {
+        "last": [
+          {
+            "name": "v0.0.2",
+            "updatedAt": "2017-08-08T15:28:36Z"
+          }
+        ]
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 57
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 4
+      },
+      "stargazers": {
+        "totalCount": 44
+      }
+    },
+    {
+      "nameWithOwner": "CodeShark/RippleGen",
+      "forkCount": 11,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2013-04-09T23:20:35Z",
+      "description": "A simple multithreaded vanity generator for the ripple p2p network",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 27
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 0
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 3
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 21
+      }
+    },
+    {
+      "nameWithOwner": "emschwartz/ripple-donate-widget",
+      "forkCount": 3,
+      "isFork": false,
+      "parent": null,
+      "isMirror": false,
+      "mirrorUrl": null,
+      "createdAt": "2014-01-31T08:31:31Z",
+      "description": "An embeddable widget for paying with Ripple.",
+      "releases": {
+        "last": []
+      },
+      "master": {
+        "commits": {
+          "history": {
+            "totalCount": 15
+          }
+        }
+      },
+      "prsOpen": {
+        "totalCount": 1
+      },
+      "prsClosed": {
+        "totalCount": 0
+      },
+      "issuesOpen": {
+        "totalCount": 0
+      },
+      "issuesClosed": {
+        "totalCount": 0
+      },
+      "stargazers": {
+        "totalCount": 7
+      }
+    }
+  ],
+  "forkCount": 3172,
+  "commits": 38152,
+  "prsOpen": 73,
+  "prsClosed": 2430,
+  "issuesOpen": 410,
+  "issuesClosed": 2029,
+  "stargazers": 6561
+}

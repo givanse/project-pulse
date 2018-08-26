@@ -1,6 +1,4 @@
 node_modules
 tmp/*
 dist
-public/projects
 .github.token
-src/utils/names.ts
