@@ -11,3 +11,11 @@
   color: red;
   cursor: pointer;
 }
+
+.inline {
+  display: inline-block;
+}
+
+.flexbox {
+  display: flex;
+}

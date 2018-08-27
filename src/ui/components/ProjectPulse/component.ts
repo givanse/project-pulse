@@ -23,17 +23,16 @@ export default class ProjectPulse extends Component {
     this.projectNames = state.projectNames;
   }
 
-  _populateSearchInput() {
-    //const input = this.bounds.firstNode.querySelector('.ui.search');
-    const input = $('.ui.search');
-    input
+  _populateSearchInput(node:Node) {
+    $(node)
     .search({
       source: names 
     });
   }
 
   didInsertElement() {
-    this._populateSearchInput();
+    const firstNode = this.bounds.firstNode;
+    this._populateSearchInput(firstNode);
   }
 
   addProject(event) {
@@ -57,11 +56,10 @@ export default class ProjectPulse extends Component {
     event.target.value = '';
   }
 
-  @tracked projectNames:string[];
+  @tracked projectNames:any[];
 
-  _addProject(projectName:string) {
-    navigation.addProjectName(projectName);
-    this.projectNames = this.projectNames.concat([projectName]);
+  _addProject(projectName:string):void {
+    this.projectNames = navigation.addProjectName(projectName);
   }
 
   removeProject(projectName:string) {

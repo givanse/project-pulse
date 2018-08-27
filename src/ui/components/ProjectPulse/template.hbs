@@ -28,20 +28,20 @@
 
 </header>
 
-<div class="ui grid">
-  <div class="{{if repos 'thirteen' 'sixteen'}} wide column">
-  <div class="ui seven cards">
-    {{#each projectNames key="@index" as |projectName|}}
-      <div class="card">
-        <ProjectPanel @projectName={{projectName}}
-                      @close={{action removeProject}} 
-                      @showRepos={{action showRepos}} />
-      </div>
-    {{/each}}
-  </div>
+<div class="flexbox">
+  <div class="">
+    <div class="ui cards">
+      {{#each projectNames key="id" as |project|}}
+        <div class="card {{project.name}}">
+          <ProjectPanel @projectName={{project.name}}
+                        @close={{action removeProject}} 
+                        @showRepos={{action showRepos}} />
+        </div>
+      {{/each}}
+    </div>
   </div>
 
-  <aside class="three wide column">
+  <aside class="ui segment">
     <h2 class="ui header">
       {{asideProjectName}}
     </h2>

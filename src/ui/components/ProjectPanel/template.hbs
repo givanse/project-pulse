@@ -8,7 +8,7 @@
   <div class="ui divider"></div>
 
   <i class="fork icon"></i>
-  {{project.forkCount}}
+  {{ipad project.forkCount 4}}
   <br>
   <i class="history icon"></i>
   {{ipad project.commits 4}}
@@ -30,13 +30,11 @@
   {{ipad project.prsClosed 4}}
 </div>
 
-  <div class="ui bottom attached button"
+  <div class="ui bottom attached button center aligned"
        onclick={{action @showRepos project.id project.repos}}>
-    <span class="right floated">
-      <i class="github icon large"
-          title="github repositories"></i>
-      {{project.repos.length}} Repos
-    </span>
+    <i class="github icon large"
+        title="github repositories"></i>
+    {{project.repos.length}} Repos
   </div>
 
 {{else}}

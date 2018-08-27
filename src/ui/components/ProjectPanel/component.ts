@@ -15,6 +15,7 @@ export default class ProjectPanel extends Component {
   async fetchProject(projectName:string):Promise<void> {
     this.project = await fetchProject(projectName);
   }
+
 /*
   @tracked('project', 'sortKey')
   get reposSorted() {
