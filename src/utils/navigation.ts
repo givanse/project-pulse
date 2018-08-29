@@ -2,12 +2,25 @@ import {computerFriendly} from './name-helpers';
 import {buildUniqueProjectDesc} from './index';
 
 function replaceStateWithQs():any {
-const qs = window.location.search;
+  const qs = window.location.search;
+
+  if (!qs) {
+    return null;
+  }
+
   const state = {
     projectNames: getProjectNamesFromQs()
   };
   history.replaceState(state, '', qs);
   return state;
+}
+
+function replaceStateWithPath():any {
+  const path = window.location.pathname;
+  if (!path) {
+    return null;
+  }
+  return transitionTo(path);
 }
 
 function buildQs(projectNames:any[]):string {
@@ -63,9 +76,30 @@ function removeProjectName(target:string) {
   history.pushState(newState, '', qs);
 }
 
+function transitionTo(path) {
+  console.log('navigation:transitionTo', path);
+
+  const segments = path.split('/');
+
+  if (segments[0] === 'p') {
+    history.pushState({}, '', path);
+    const projectName = segments[1];
+    return projectName;
+  }
+}
+
+function getProjectNameFromPath() {
+  const path = window.location.pathname;
+  const segments = path.split('/');
+  return segments[1];
+}
+
 export default {
   replaceStateWithQs,
+  replaceStateWithPath,
   removeProjectName,
   addProjectName,
   getProjectNamesFromQs,
+  transitionTo,
+  getProjectNameFromPath,
 };

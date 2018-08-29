@@ -11,16 +11,50 @@ for (const obj of names) {
 export default class ProjectPulse extends Component {
 
   @tracked invalidName: string;
+  @tracked projectName:string;
+  @tracked projectNames:any[];
+  @tracked('projectNames') get projectNamesHuman():string[] {
+    const arr = [];
+    for (const projDesc of this.projectNames) {
+      const name = humanFriendly(projDesc.name);
+      arr.push(name);
+    }
+    return arr;
+  }
+  @tracked('projectNames') get projectNamesQs():string {
+    let str = '';
+    for (let i = 0; i<this.projectNames.length; i++) {
+      const name = this.projectNames[i].name;
+      if (i === 0) {
+        str += name; 
+      } else {
+        str += ',' + name; 
+      }
+    }
+    return '/?projectNames=' + str;
+  }
 
   constructor(options) {
     super(options);
 
     window.onpopstate = (/*event*/) => {
-      this.projectNames = history.state.projectNames;
+      console.log('popstate', history.state);
+      if (history.state) {
+        this.projectName = null;
+        this.projectNames = history.state.projectNames;
+      }
     };
 
+    this._initNavigation();
+  }
+
+  _initNavigation() {
     const state = navigation.replaceStateWithQs();
-    this.projectNames = state.projectNames;
+    if (state) {
+      this.projectNames = state.projectNames;
+    } else {
+      this.projectName = navigation.replaceStateWithPath();
+    }
   }
 
   _populateSearchInput(node:Node) {
@@ -56,8 +90,6 @@ export default class ProjectPulse extends Component {
     event.target.value = '';
   }
 
-  @tracked projectNames:any[];
-
   _addProject(projectName:string):void {
     this.projectNames = navigation.addProjectName(projectName);
   }
@@ -68,12 +100,12 @@ export default class ProjectPulse extends Component {
     this.projectNames = r;
   }
 
-  @tracked repos:any[];
-  @tracked asideProjectName:string;
+  transitionToP(projectName) {
+    this.projectName = navigation.transitionTo(`p/${projectName}`);    
+  }
 
-  showRepos(projectName, repos) {
-    this.asideProjectName = projectName;
-    this.repos = repos;
+  goBack() {
+    history.back();
   }
 
 }

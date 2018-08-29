@@ -1,7 +1,7 @@
 .pull.request {
   font-family: monospace;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .right.floated.times.circle.outline.icon {
@@ -18,4 +18,8 @@
 
 .flexbox {
   display: flex;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }

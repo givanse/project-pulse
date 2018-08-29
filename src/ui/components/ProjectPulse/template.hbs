@@ -1,21 +1,36 @@
 <header class="ui segment grid">
-  <div class="four wide column">
-    <h2 class="ui header">
-      Cryptocurrency Project Pulse
-    </h2>
+  <div class="three wide column">
+    <h1 class="ui header brown">
+      CPP
+      <div class="sub header">Cryptocurrency Project Pulse</div>
+    </h1>
   </div>
 
   <div class="three wide column">
-    <div class="ui search">
-      <div class="ui icon input big">
-        <input type="text"
-                class="prompt"
-                placeholder="project name"
-                onchange={{action addProject}} />
-        <i class="plus icon"></i>
+    {{#if projectName}}
+
+      <div class="ui violet basic button big"
+           onclick={{action goBack}}>
+        {{#each projectNamesHuman key="@index" as |name index|}}
+          {{#if index}},&nbsp;{{/if}}
+          {{name}}
+        {{/each}}
       </div>
-      <div class="results"></div>
-    </div>
+
+    {{else if projectNames}}
+
+      <div class="ui search">
+        <div class="ui icon input big">
+          <input type="text"
+                  class="prompt"
+                  placeholder="project name"
+                  onchange={{action addProject}} />
+          <i class="plus icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+
+    {{/if}}
   </div>
 
   <div class="three wide column middle aligned content">
@@ -28,33 +43,16 @@
 
 </header>
 
-<div class="flexbox">
-  <div class="">
-    <div class="ui cards">
-      {{#each projectNames key="id" as |project|}}
-        <div class="card {{project.name}}">
-          <ProjectPanel @projectName={{project.name}}
-                        @close={{action removeProject}} 
-                        @showRepos={{action showRepos}} />
-        </div>
-      {{/each}}
-    </div>
-  </div>
-
-  <aside class="ui segment">
-    <h2 class="ui header">
-      {{asideProjectName}}
-    </h2>
-
-    {{#each repos key="nameWithOwner" as |repo|}}
-      <div class="ui relaxed divided list">
-        <div class="item">
-          <div class="content">
-            <RepoSummary @repo={{repo}} />
-          </div>
-        </div>
+{{#if projectName}}
+  <ProjectFull @projectName={{projectName}} />
+{{else if projectNames}}
+  <div class="ui cards">
+    {{#each projectNames key="id" as |project|}}
+      <div class="card">
+        <ProjectPanel @projectName={{project.name}}
+                      @close={{action removeProject}}
+                      @transitionToP={{action transitionToP project.name}} />
       </div>
-      <div class="ui fitted divider"></div>
     {{/each}}
-  </aside>
-</div>
+  </div>
+{{/if}}
