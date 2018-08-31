@@ -7,15 +7,16 @@
   </div>
 
   <div class="thirteen wide column">
-    {{#if projectName}}
+    {{#if projectId}}
 
-      <div class="ui violet basic button big"
-           onclick={{action goBack}}>
-        {{#each projectNamesHuman key="@index" as |name index|}}
-          {{#if index}},&nbsp;{{/if}}
-          {{name}}
-        {{/each}}
-      </div>
+      <a href="/{{projectNamesQs}}" data-navigo>
+        <div class="ui violet basic button big">
+          {{#each projectNamesHuman key="@index" as |name index|}}
+            {{#if index}},&nbsp;{{/if}}
+            {{name}}
+          {{/each}}
+        </div>
+      </a>
 
     {{else if projectNames}}
 
@@ -25,7 +26,7 @@
                   class="prompt"
                   placeholder="project name"
                   onchange={{action addProject}} />
-          <i class="search plus icon"></i>
+          <i class="search plus icon green large"></i>
         </div>
         <div class="results"></div>
       </div>
@@ -39,7 +40,7 @@
 
   {{#if invalidName}}
     <div class="ui segment bottom attached middle aligned big">
-      <i class="exclamation icon"></i>
+      <i class="exclamation icon red"></i>
       `{{invalidName}}` is not available,
       <a target="_blank" 
           href="https://github.com/givanse/project-pulse/tree/master/descriptors">
@@ -50,15 +51,14 @@
     <br>
   {{/if}}
 
-  {{#if projectName}}
-    <ProjectFull @projectName={{projectName}} />
+  {{#if projectId}}
+    <ProjectFull @projectId={{projectId}} />
   {{else if projectNames}}
     <div class="ui cards">
       {{#each projectNames key="id" as |project|}}
         <div class="card">
           <ProjectPanel @projectName={{project.name}}
-                        @close={{action removeProject}}
-                        @transitionToP={{action transitionToP project.name}} />
+                        @close={{action removeProject}} />
         </div>
       {{/each}}
     </div>

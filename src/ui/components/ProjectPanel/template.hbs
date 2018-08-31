@@ -2,11 +2,14 @@
   <ProjectSummary @project={{project}}
                   @close={{action @close project.id}} />
 
-  <div class="ui bottom attached button center aligned"
-       onclick={{@transitionToP}}>
-    <i class="github icon large"
-       title="github repositories"></i>
-    {{project.repos.length}} Repos
+  <div class="ui bottom attached button center aligned">
+
+    <a href="/p/{{project.id}}" data-navigo>
+      <i class="github icon large"
+        title="github repositories"></i>
+      {{project.repos.length}} Repos
+    </a>
+
   </div>
 {{else}}
   <br>

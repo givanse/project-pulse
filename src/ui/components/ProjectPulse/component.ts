@@ -1,8 +1,9 @@
 import Component, { tracked } from '@glimmer/component';
 import navigation from '../../../utils/navigation';
 import names from '../../../utils/names';
-import {humanFriendly} from '../../../utils/name-helpers';
-import {cloneAndRemoveString} from '../../../utils';
+import {humanFriendly, computerFriendly} from '../../../utils/name-helpers';
+//import {cloneAndRemoveString} from '../../../utils';
+import Navigo from 'navigo';
 
 for (const obj of names) {
   obj.title = humanFriendly(obj.title);
@@ -10,8 +11,9 @@ for (const obj of names) {
 
 export default class ProjectPulse extends Component {
 
+  router;
   @tracked invalidName: string;
-  @tracked projectName:string;
+  @tracked projectId:string;
   @tracked projectNames:any[];
   @tracked('projectNames') get projectNamesHuman():string[] {
     const arr = [];
@@ -39,22 +41,19 @@ export default class ProjectPulse extends Component {
 
     window.onpopstate = (/*event*/) => {
       console.log('popstate', history.state);
-      if (history.state) {
-        this.projectName = null;
-        this.projectNames = history.state.projectNames;
-      }
     };
 
     this._initNavigation();
   }
 
   _initNavigation() {
-    const state = navigation.replaceStateWithQs();
-    if (state) {
-      this.projectNames = state.projectNames;
-    } else {
-      this.projectName = navigation.replaceStateWithPath();
-    }
+    const useHash = false;
+    this.router = new Navigo(location.origin, useHash);
+    this.router.on('/', () => {
+      this.projectNames = navigation.getProjectNamesFromQs();
+    })
+    .on('/p/:projectId', params => { this.projectId = params.projectId; })
+    .resolve();
   }
 
   _populateSearchInput(node:Node) {
@@ -91,21 +90,14 @@ export default class ProjectPulse extends Component {
   }
 
   _addProject(projectName:string):void {
-    this.projectNames = navigation.addProjectName(projectName);
+    projectName = computerFriendly(projectName);
+    const qs = window.location.search + `,${projectName}`;
+    this.router.navigate(`/${qs}`);
   }
 
   removeProject(projectName:string) {
-    navigation.removeProjectName(projectName);
-    const r = cloneAndRemoveString(projectName, this.projectNames);
-    this.projectNames = r;
-  }
-
-  transitionToP(projectName) {
-    this.projectName = navigation.transitionTo(`p/${projectName}`);    
-  }
-
-  goBack() {
-    history.back();
+    const qs = navigation.removeProjectName(projectName);
+    this.router.navigate(`/${qs}`);
   }
 
 }

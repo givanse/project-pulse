@@ -32,21 +32,7 @@ function buildQs(projectNames:any[]):string {
   return qs;
 }
 
-function addProjectName(projectName:string) {
-  projectName = computerFriendly(projectName);
-
-  const currentState = history.state;
-  const newState = Object.assign({}, currentState);
-
-  const projDesc = buildUniqueProjectDesc(projectName);
-  newState.projectNames.push(projDesc);
-  const qs = buildQs(newState.projectNames);
-  history.pushState(newState, '', qs);
-
-  return newState.projectNames; 
-}
-
-function getProjectNamesFromQs():object[] {
+function getProjectNamesFromQs():any[] {
   const qs = window.location.search;
   const projectNames = qs.substring(qs.indexOf('=')+1).split(',');
   
@@ -58,13 +44,12 @@ function getProjectNamesFromQs():object[] {
   return arr;
 }
 
-function removeProjectName(target:string) {
+function removeProjectName(target:string):string {
   target = computerFriendly(target);
 
-  const currentState = history.state;
-  const newState = Object.assign({}, currentState);
+  const projectNames = getProjectNamesFromQs();
+  const arr = projectNames;
 
-  const arr = newState.projectNames;
   for (let i = arr.length-1; i>=0; i--) {
     const name = arr[i].name;
     if (name === target) {
@@ -72,34 +57,11 @@ function removeProjectName(target:string) {
     }
   }
  
-  const qs = buildQs(newState.projectNames);
-  history.pushState(newState, '', qs);
-}
-
-function transitionTo(path) {
-  console.log('navigation:transitionTo', path);
-
-  const segments = path.split('/');
-
-  if (segments[0] === 'p') {
-    history.pushState({}, '', path);
-    const projectName = segments[1];
-    return projectName;
-  }
-}
-
-function getProjectNameFromPath() {
-  const path = window.location.pathname;
-  const segments = path.split('/');
-  return segments[1];
+  const qs = buildQs(arr);
+  return qs;
 }
 
 export default {
-  replaceStateWithQs,
-  replaceStateWithPath,
   removeProjectName,
-  addProjectName,
   getProjectNamesFromQs,
-  transitionTo,
-  getProjectNameFromPath,
 };
