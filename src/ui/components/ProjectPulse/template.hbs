@@ -1,9 +1,13 @@
 <header class="ui fixed menu grid">
   <div class="three wide column">
-    <h1 class="ui header brown">
-      CPP
-      <div class="sub header">Cryptocurrency Project Pulse</div>
-    </h1>
+    <a href="/" data-navigo>
+      <h1 class="ui header brown">
+        CPP
+        <div class="sub header mobile hidden">
+          Cryptocurrency Project Pulse
+        </div>
+      </h1>
+    </a>
   </div>
 
   <div class="thirteen wide column">
@@ -11,6 +15,7 @@
 
       <a href="/{{projectNamesQs}}" data-navigo>
         <div class="ui violet basic button big">
+          <i class="clipboard outline icon"></i>
           {{#each projectNamesHuman key="@index" as |name index|}}
             {{#if index}},&nbsp;{{/if}}
             {{name}}
@@ -53,7 +58,7 @@
 
   {{#if projectId}}
     <ProjectFull @projectId={{projectId}} />
-  {{else if projectNames}}
+  {{else if projectNames.length}}
     <div class="ui cards">
       {{#each projectNames key="id" as |project|}}
         <div class="card">
@@ -61,6 +66,69 @@
                         @close={{action removeProject}} />
         </div>
       {{/each}}
+    </div>
+  {{else}}
+    <div class="ui segment">
+
+      <div class="ui middle aligned divided list big">
+
+        <div class="item">
+          <div class="content">
+            <a href="/?projectNames=dogecoin,useless-ethereum-token,monacoin,nyan-coin,garlic-coin" data-navigo>
+              Fun coins
+            </a>
+            <div class="description">for the lolz ヽ(❍ᴥ❍ʋ)ノ</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="content">
+            <a href="/?projectNames=bitcoin,bitcoin-cash,bitcoin-gold,bitcoin-diamond,bitcoin-private" data-navigo>
+              Bitcoin forks
+            </a>
+            <div class="description">projects that kept the word Bitcoin in their name</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="content">
+            <a href="/?projectNames=bitcoin,ethereum,ripple,bitcoin-cash,eos" data-navigo>
+              Top 5
+            </a>
+            <div class="description">top 5 by market cap according to coinmarketcap.com</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="content">
+            <a href="/?projectNames=ethereum,eos,neo,nem" data-navigo>
+              Smart contracts
+            </a>
+            <div class="description">Projects that are building smart contracts platforms</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="content">
+            <a href="/?projectNames=bancor,enjin,omisego" data-navigo>
+              Ethereum tokens
+            </a>
+            <div class="description">random Ethereum tokens</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="content">
+            <a href="/?projectNames=enjin,first-blood,skin-coin" data-navigo>
+              Gaming related
+            </a>
+            <div class="description">digital assets and game content</div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text align center big">Also you can add a project using the search field at the top.</p>
     </div>
   {{/if}}
 </section>

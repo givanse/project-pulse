@@ -15,14 +15,6 @@ function replaceStateWithQs():any {
   return state;
 }
 
-function replaceStateWithPath():any {
-  const path = window.location.pathname;
-  if (!path) {
-    return null;
-  }
-  return transitionTo(path);
-}
-
 function buildQs(projectNames:any[]):string {
   let qs = '?projectNames=';
   for (const obj of projectNames) {
@@ -34,6 +26,10 @@ function buildQs(projectNames:any[]):string {
 
 function getProjectNamesFromQs():any[] {
   const qs = window.location.search;
+  if (!qs) {
+    return [];
+  }
+
   const projectNames = qs.substring(qs.indexOf('=')+1).split(',');
   
   const arr = [];

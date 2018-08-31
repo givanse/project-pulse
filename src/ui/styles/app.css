@@ -38,6 +38,9 @@ html, body, #app {
 .text.big {
   font-size: 1.2rem;
 }
+.text.align.center {
+  text-align: center;
+}
 
 .page-content {
   margin-top: 6rem;
@@ -47,6 +50,16 @@ html, body, #app {
 footer {
   padding: 3rem 2rem;
   text-align: center;
+}
+
+
+/**
+ * media query
+ */
+@media only screen and (max-width: 599px) {
+  .sub.header.mobile.hidden {
+    display: none;
+  }
 }
 
 /**

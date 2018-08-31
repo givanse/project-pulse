@@ -15,16 +15,34 @@ export default class ProjectPulse extends Component {
   @tracked invalidName: string;
   @tracked projectId:string;
   @tracked projectNames:any[];
+
   @tracked('projectNames') get projectNamesHuman():string[] {
     const arr = [];
+    if (!this.projectNames) {
+      if (this.projectId) {
+        return [humanFriendly(this.projectId)];
+      }
+
+      return arr;
+    }
+
     for (const projDesc of this.projectNames) {
       const name = humanFriendly(projDesc.name);
       arr.push(name);
     }
     return arr;
   }
+
   @tracked('projectNames') get projectNamesQs():string {
     let str = '';
+    if (!this.projectNames) {
+      if (this.projectId) {
+        return '?projectNames=' + this.projectId;
+      }
+
+      return str;
+    }
+
     for (let i = 0; i<this.projectNames.length; i++) {
       const name = this.projectNames[i].name;
       if (i === 0) {
@@ -33,7 +51,7 @@ export default class ProjectPulse extends Component {
         str += ',' + name; 
       }
     }
-    return '/?projectNames=' + str;
+    return '?projectNames=' + str;
   }
 
   constructor(options) {
@@ -91,7 +109,12 @@ export default class ProjectPulse extends Component {
 
   _addProject(projectName:string):void {
     projectName = computerFriendly(projectName);
-    const qs = window.location.search + `,${projectName}`;
+    let qs;
+    if (window.location.search) {
+      qs = window.location.search + `,${projectName}`;
+    } else {
+      qs = `?projectNames=${projectName}`;
+    }
     this.router.navigate(`/${qs}`);
   }
 
