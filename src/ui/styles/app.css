@@ -1,3 +1,7 @@
+html, body, #app {
+  height: 100%;
+}
+
 .pull.request {
   font-family: monospace;
   font-weight: bold;
@@ -19,7 +23,28 @@
 .flexbox {
   display: flex;
 }
+.flexbox.column {
+  flex-direction: column;
+}
+
+.full.height {
+  height: 100%;
+}
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.text.big {
+  font-size: 1.2rem;
+}
+
+.page-content {
+  margin-top: 6rem;
+  flex: 1;
+}
+
+footer {
+  padding: 3rem 2rem;
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-<header class="ui segment grid">
+<header class="ui fixed menu grid">
   <div class="three wide column">
     <h1 class="ui header brown">
       CPP
@@ -6,7 +6,7 @@
     </h1>
   </div>
 
-  <div class="three wide column">
+  <div class="thirteen wide column">
     {{#if projectName}}
 
       <div class="ui violet basic button big"
@@ -25,34 +25,50 @@
                   class="prompt"
                   placeholder="project name"
                   onchange={{action addProject}} />
-          <i class="plus icon"></i>
+          <i class="search plus icon"></i>
         </div>
         <div class="results"></div>
       </div>
 
     {{/if}}
   </div>
-
-  <div class="three wide column middle aligned content">
-    {{#if invalidName}}
-      `{{invalidName}}` is not available,
-      <a target="_blank" 
-         href="https://github.com/givanse/project-pulse/tree/master/descriptors">you can add it here</a>
-    {{/if}}
-  </div>
-
 </header>
 
-{{#if projectName}}
-  <ProjectFull @projectName={{projectName}} />
-{{else if projectNames}}
-  <div class="ui cards">
-    {{#each projectNames key="id" as |project|}}
-      <div class="card">
-        <ProjectPanel @projectName={{project.name}}
-                      @close={{action removeProject}}
-                      @transitionToP={{action transitionToP project.name}} />
-      </div>
-    {{/each}}
-  </div>
-{{/if}}
+<div class="flexbox column full height">
+<section class="page-content">
+
+  {{#if invalidName}}
+    <div class="ui segment bottom attached middle aligned big">
+      <i class="exclamation icon"></i>
+      `{{invalidName}}` is not available,
+      <a target="_blank" 
+          href="https://github.com/givanse/project-pulse/tree/master/descriptors">
+        you can add it here
+      </a> by clicking "Create new file"
+    </div>
+  {{else}}
+    <br>
+  {{/if}}
+
+  {{#if projectName}}
+    <ProjectFull @projectName={{projectName}} />
+  {{else if projectNames}}
+    <div class="ui cards">
+      {{#each projectNames key="id" as |project|}}
+        <div class="card">
+          <ProjectPanel @projectName={{project.name}}
+                        @close={{action removeProject}}
+                        @transitionToP={{action transitionToP project.name}} />
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+</section>
+
+<footer class="ui vertical footer segment">
+  <a href="https://github.com/givanse/project-pulse">
+    <i class="github icon large"></i>
+    Source Code 
+  </a>
+</footer>
+</div>
