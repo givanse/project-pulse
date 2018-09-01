@@ -67,11 +67,17 @@ export default class ProjectPulse extends Component {
   _initNavigation() {
     const useHash = false;
     this.router = new Navigo(location.origin, useHash);
+
     this.router.on('/', () => {
       this.projectNames = navigation.getProjectNamesFromQs();
+      this.projectId = null;
     })
     .on('/p/:projectId', params => { this.projectId = params.projectId; })
     .resolve();
+
+    this.router.notFound(function() {
+      this.status.c404 = true;
+    });
   }
 
   _populateSearchInput(node:Node) {
@@ -84,6 +90,11 @@ export default class ProjectPulse extends Component {
   didInsertElement() {
     const firstNode = this.bounds.firstNode;
     this._populateSearchInput(firstNode);
+  }
+
+  didUpdate() {
+    console.log('updatePageLinks');
+    this.router.updatePageLinks();
   }
 
   addProject(event) {

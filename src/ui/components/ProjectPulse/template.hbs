@@ -13,9 +13,9 @@
   <div class="thirteen wide column">
     {{#if projectId}}
 
+      {{! Back to dashboard }}
       <a href="/{{projectNamesQs}}" data-navigo>
         <div class="ui violet basic button big">
-          <i class="clipboard outline icon"></i>
           {{#each projectNamesHuman key="@index" as |name index|}}
             {{#if index}},&nbsp;{{/if}}
             {{name}}
@@ -52,6 +52,11 @@
         you can add it here
       </a> by clicking "Create new file"
     </div>
+  {{else if status.c404}}
+    <div class="ui segment bottom attached middle aligned big">
+      <i class="exclamation icon red"></i>
+      404 Page not found.
+    </div>
   {{else}}
     <br>
   {{/if}}
@@ -77,7 +82,7 @@
             <a href="/?projectNames=dogecoin,useless-ethereum-token,monacoin,nyan-coin,garlic-coin" data-navigo>
               Fun coins
             </a>
-            <div class="description">for the lolz ヽ(❍ᴥ❍ʋ)ノ</div>
+            <div class="description">built for the lolz</div>
           </div>
         </div>
 
@@ -95,7 +100,7 @@
             <a href="/?projectNames=bitcoin,ethereum,ripple,bitcoin-cash,eos" data-navigo>
               Top 5
             </a>
-            <div class="description">top 5 by market cap according to coinmarketcap.com</div>
+            <div class="description">biggest market cap according to coinmarketcap.com</div>
           </div>
         </div>
 
@@ -104,7 +109,7 @@
             <a href="/?projectNames=ethereum,eos,neo,nem" data-navigo>
               Smart contracts
             </a>
-            <div class="description">Projects that are building smart contracts platforms</div>
+            <div class="description">projects building smart contracts platforms</div>
           </div>
         </div>
 
@@ -113,7 +118,7 @@
             <a href="/?projectNames=bancor,enjin,omisego" data-navigo>
               Ethereum tokens
             </a>
-            <div class="description">random Ethereum tokens</div>
+            <div class="description">miscellaneous Ethereum tokens</div>
           </div>
         </div>
 
