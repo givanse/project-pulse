@@ -1,0 +1,8 @@
+{
+  "organizations": [
+  ],
+  "repositories": [
+    {"owner": "bitconnectcoin", "repo": "bitconnectcoin"},
+    {"owner": "bitconnectcoin", "repo": "bitconnectx"}
+  ]
+}
