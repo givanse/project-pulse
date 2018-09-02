@@ -52,6 +52,13 @@ footer {
   text-align: center;
 }
 
+.maxw600 {
+  max-width: 600px;
+}
+
+.margin.auto {
+  margin: auto;
+}
 
 /**
  * media query
