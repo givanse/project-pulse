@@ -1,13 +1,18 @@
+---
 language: node_js
 node_js:
-  - 8
-sudo: false
+  - "8"
+sudo: required
 dist: trusty
 addons:
   chrome: stable
   firefox: stable
 cache:
   directories:
-    - node_modules
+    - $HOME/.npm
+env:
+  global:
+    # See https://git.io/vdao3 for details.
+    - JOBS=1
 script:
   - yarn test
