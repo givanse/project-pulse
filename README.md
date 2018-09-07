@@ -1,8 +1,5 @@
 # project-pulse
 
-This README outlines the details of collaborating on this Glimmer application.
-A short introduction of this app could easily go here.
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -27,6 +24,11 @@ You will need the following things properly installed on your computer.
 
 * `ember build` (development)
 * `ember build --environment production` (production)
+
+### Testing
+
+ * `ember test --server`
+ * Run the tests at [http://localhost:7357](http://localhost:7357).
 
 ## Further Reading / Useful Links
 

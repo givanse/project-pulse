@@ -1,7 +1,7 @@
-export function humanFriendly(projectName: string):string {
+export function humanFriendly(projectName: string): string {
   return projectName.replace(/-/g, ' ');
 }
 
-export function computerFriendly(projectName: string):string {
+export function computerFriendly(projectName: string): string {
   return projectName.replace(/ /g, '-');
 }

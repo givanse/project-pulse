@@ -8,6 +8,7 @@ module('Component: ProjectPulse', function(hooks) {
 
   test('it renders', async function(assert) {
     await this.render(hbs`<ProjectPulse />`);
-    assert.equal(this.containerElement.textContent, 'Welcome to Glimmer!\n');
+    const txt: string = this.containerElement.textContent;
+    assert.ok(txt.includes('Cryptocurrency Project Pulse'));
   });
 });
