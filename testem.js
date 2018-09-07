@@ -1,8 +1,9 @@
-{
+module.exports = {
   framework: 'qunit',
   src_files: ['src/**/*'],
   serve_files: ['index.js'],
   disable_watching: true,
+  launch_in_dev: ['Chrome'],
   launch_in_ci: ['Firefox', 'Chrome'],
   browser_args: {
     Chrome: {
