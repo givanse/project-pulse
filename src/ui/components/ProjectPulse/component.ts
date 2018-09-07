@@ -1,9 +1,11 @@
 import Component, { tracked } from '@glimmer/component';
-import navigation from '../../../utils/navigation';
-import names from '../../../utils/names';
-import {humanFriendly, computerFriendly} from '../../../utils/name-helpers';
-//import {cloneAndRemoveString} from '../../../utils';
 import Navigo from 'navigo';
+import {
+  computerFriendly,
+  humanFriendly,
+} from '../../../utils/name-helpers';
+import names from '../../../utils/names';
+import navigation from '../../../utils/navigation';
 
 for (const obj of names) {
   obj.title = humanFriendly(obj.title);
@@ -11,12 +13,12 @@ for (const obj of names) {
 
 export default class ProjectPulse extends Component {
 
-  router;
-  @tracked invalidName: string;
-  @tracked projectId:string;
-  @tracked projectNames:any[];
+  private router;
+  @tracked private invalidName: string;
+  @tracked private projectId: string;
+  @tracked private projectNames: any[];
 
-  @tracked('projectNames') get projectNamesHuman():string[] {
+  @tracked('projectNames') get projectNamesHuman(): string[] {
     const arr = [];
     if (!this.projectNames) {
       if (this.projectId) {
@@ -33,7 +35,7 @@ export default class ProjectPulse extends Component {
     return arr;
   }
 
-  @tracked('projectNames') get projectNamesQs():string {
+  @tracked('projectNames') get projectNamesQs(): string {
     let str = '';
     if (!this.projectNames) {
       if (this.projectId) {
@@ -43,12 +45,12 @@ export default class ProjectPulse extends Component {
       return str;
     }
 
-    for (let i = 0; i<this.projectNames.length; i++) {
+    for (let i = 0; i < this.projectNames.length; i++) {
       const name = this.projectNames[i].name;
       if (i === 0) {
-        str += name; 
+        str += name;
       } else {
-        str += ',' + name; 
+        str += ',' + name;
       }
     }
     return '?projectNames=' + str;
@@ -56,48 +58,15 @@ export default class ProjectPulse extends Component {
 
   constructor(options) {
     super(options);
-
-    window.onpopstate = (/*event*/) => {
-      console.log('popstate', history.state);
-    };
-
-    this._initNavigation();
+    this.initNavigation();
   }
 
-  _initNavigation() {
-    const useHash = false;
-    this.router = new Navigo(location.origin, useHash);
-
-    this.router.on('/', () => {
-      this.projectNames = navigation.getProjectNamesFromQs();
-      this.projectId = null;
-    })
-    .on('/p/:projectId', params => { this.projectId = params.projectId; })
-    .resolve();
-
-    this.router.notFound(function() {
-      this.status.c404 = true;
-    });
+  public removeProject(projectName: string) {
+    const qs = navigation.removeProjectName(projectName);
+    this.router.navigate(`/${qs}`);
   }
 
-  _populateSearchInput(node:Node) {
-    $(node)
-    .search({
-      source: names 
-    });
-  }
-
-  didInsertElement() {
-    const firstNode = this.bounds.firstNode;
-    this._populateSearchInput(firstNode);
-  }
-
-  didUpdate() {
-    console.log('updatePageLinks');
-    this.router.updatePageLinks();
-  }
-
-  addProject(event) {
+  public addProject(event) {
     const name = event.target.value.trim();
 
     let validName = false;
@@ -118,7 +87,40 @@ export default class ProjectPulse extends Component {
     event.target.value = '';
   }
 
-  _addProject(projectName:string):void {
+  public didInsertElement() {
+    const firstNode = this.bounds.firstNode;
+    this.populateSearchInput(firstNode);
+  }
+
+  public didUpdate() {
+    this.router.updatePageLinks();
+  }
+
+  private initNavigation() {
+    const useHash = false;
+    this.router = new Navigo(location.origin, useHash);
+
+    this.router.on('/', () => {
+      this.projectNames = navigation.getProjectNamesFromQs();
+      this.projectId = null;
+    })
+    .on('/p/:projectId', (params) => { this.projectId = params.projectId; })
+    .resolve();
+
+    this.router.notFound(function() {
+      this.status.c404 = true;
+    });
+  }
+
+  private populateSearchInput(node: Node) {
+    const $ = window.$ || (() => ({search: () => null}));
+    $(node)
+    .search({
+      source: names
+    });
+  }
+
+  private _addProject(projectName: string): void {
     projectName = computerFriendly(projectName);
     let qs;
     if (window.location.search) {
@@ -126,11 +128,6 @@ export default class ProjectPulse extends Component {
     } else {
       qs = `?projectNames=${projectName}`;
     }
-    this.router.navigate(`/${qs}`);
-  }
-
-  removeProject(projectName:string) {
-    const qs = navigation.removeProjectName(projectName);
     this.router.navigate(`/${qs}`);
   }
 

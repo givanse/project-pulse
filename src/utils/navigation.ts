@@ -1,7 +1,7 @@
-import {computerFriendly} from './name-helpers';
 import {buildUniqueProjectDesc} from './index';
+import {computerFriendly} from './name-helpers';
 
-function replaceStateWithQs():any {
+function replaceStateWithQs(): any {
   const qs = window.location.search;
 
   if (!qs) {
@@ -15,7 +15,7 @@ function replaceStateWithQs():any {
   return state;
 }
 
-function buildQs(projectNames:any[]):string {
+function buildQs(projectNames: any[]): string {
   let qs = '?projectNames=';
   for (const obj of projectNames) {
     qs += `${obj.name},`;
@@ -24,14 +24,14 @@ function buildQs(projectNames:any[]):string {
   return qs;
 }
 
-function getProjectNamesFromQs():any[] {
+function getProjectNamesFromQs(): any[] {
   const qs = window.location.search;
   if (!qs) {
     return [];
   }
 
-  const projectNames = qs.substring(qs.indexOf('=')+1).split(',');
-  
+  const projectNames = qs.substring(qs.indexOf('=') + 1).split(',');
+
   const arr = [];
   for (const name of projectNames) {
     const projDesc = buildUniqueProjectDesc(name);
@@ -40,24 +40,24 @@ function getProjectNamesFromQs():any[] {
   return arr;
 }
 
-function removeProjectName(target:string):string {
+function removeProjectName(target: string): string {
   target = computerFriendly(target);
 
   const projectNames = getProjectNamesFromQs();
   const arr = projectNames;
 
-  for (let i = arr.length-1; i>=0; i--) {
+  for (let i = arr.length - 1; i >= 0; i--) {
     const name = arr[i].name;
     if (name === target) {
         arr.splice(i, 1);
     }
   }
- 
+
   const qs = buildQs(arr);
   return qs;
 }
 
 export default {
-  removeProjectName,
   getProjectNamesFromQs,
+  removeProjectName,
 };

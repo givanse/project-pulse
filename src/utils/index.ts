@@ -1,21 +1,9 @@
 
-let _id = 1;
+let id = 1;
 
-export function buildUniqueProjectDesc(projectName:string):any {
+export function buildUniqueProjectDesc(projectName: string): any {
   return {
-    id: _id++,
+    id: id++,
     name: projectName
   };
-}
-
-export function cloneAndRemoveString(target:string, arr:any[]):string[] {
-  const newArr = [];
-  for (let i = 0; i<arr.length;i++) {
-    const strB = arr[i].name;
-    if (strB !== target) {
-      const obj = buildUniqueProjectDesc(strB);
-      newArr.push(obj);
-    }
-  }
-  return newArr;
 }

@@ -4,7 +4,7 @@ import { humanFriendly } from '../../../utils/name-helpers';
 
 export default class ProjectFull extends Component {
 
-  @tracked project:any = null;
+  @tracked private project: any = null;
 
   constructor(options) {
     super(options);
@@ -17,7 +17,7 @@ export default class ProjectFull extends Component {
     }
   }
 
-  async fetchProject(projectName:string):Promise<void> {
+  private async fetchProject(projectName: string): Promise<void> {
     this.project = await fetchProject(projectName);
     this.project.name = humanFriendly(this.project.id);
   }

@@ -1,4 +1,9 @@
 export default function formatRepoName(params) {
-  const [owner, name] = params[0].split('/');
+  const repoName: string = params[0];
+  if (!repoName) {
+    return 'empty name';
+  }
+
+  const [owner, name] = repoName.split('/');
   return `${owner} / ${name}`;
 }
