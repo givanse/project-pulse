@@ -4,6 +4,7 @@ node_js:
 sudo: false
 addons:
   chrome: stable
+  firefox: stable
 cache:
   directories:
     - node_modules
