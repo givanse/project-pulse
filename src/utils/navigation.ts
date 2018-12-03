@@ -9,7 +9,7 @@ function replaceStateWithQs(): any {
   }
 
   const state = {
-    projectNames: getProjectNamesFromQs()
+    projectNames: getProjectNamesFromQueryString()
   };
   history.replaceState(state, '', qs);
   return state;
@@ -24,7 +24,7 @@ function buildQs(projectNames: any[]): string {
   return qs;
 }
 
-function getProjectNamesFromQs(): any[] {
+function getProjectNamesFromQueryString(): any[] {
   const qs = window.location.search;
   if (!qs) {
     return [];
@@ -37,13 +37,14 @@ function getProjectNamesFromQs(): any[] {
     const projDesc = buildUniqueProjectDesc(name);
     arr.push(projDesc);
   }
+
   return arr;
 }
 
 function removeProjectName(target: string): string {
   target = computerFriendly(target);
 
-  const projectNames = getProjectNamesFromQs();
+  const projectNames = getProjectNamesFromQueryString();
   const arr = projectNames;
 
   for (let i = arr.length - 1; i >= 0; i--) {
@@ -58,6 +59,6 @@ function removeProjectName(target: string): string {
 }
 
 export default {
-  getProjectNamesFromQs,
+  getProjectNamesFromQueryString,
   removeProjectName,
 };

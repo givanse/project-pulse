@@ -25,16 +25,7 @@
 
     {{else if projectNames}}
 
-      <div class="ui search">
-        <div class="ui icon input big">
-          <input type="text"
-                  class="prompt"
-                  placeholder="project name"
-                  onchange={{action addProject}} />
-          <i class="search plus icon green large"></i>
-        </div>
-        <div class="results"></div>
-      </div>
+      <ProjectSearchBar @addProject={{action addProject}} />
 
     {{/if}}
   </div>
@@ -64,14 +55,9 @@
   {{#if projectId}}
     <ProjectFull @projectId={{projectId}} />
   {{else if projectNames.length}}
-    <div class="ui cards">
-      {{#each projectNames key="id" as |project|}}
-        <div class="card">
-          <ProjectPanel @projectName={{project.name}}
-                        @close={{action removeProject}} />
-        </div>
-      {{/each}}
-    </div>
+    <ProjectSummaries @projectNames={{projectNames}}
+                      @addProject={{action addProject}}
+                      @removeProject={{action removeProject}} />
   {{else}}
     <div class="ui segment maxw600 margin auto">
 

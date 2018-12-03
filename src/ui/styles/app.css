@@ -61,6 +61,13 @@ footer {
 }
 
 /**
+ * Project Summary
+ */
+.project-summary {
+  height: 200px;
+}
+
+/**
  * media query
  */
 @media only screen and (max-width: 599px) {

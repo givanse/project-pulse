@@ -1,0 +1,21 @@
+<div class="ui cards">
+  {{#each @projectNames key="id" as |project|}}
+    <div class="card">
+      <ProjectPanel @projectName={{project.name}}
+                    @removeProject={{@removeProject}} />
+    </div>
+  {{/each}}
+
+  <div class="card">
+    <div class="content project-summary">
+      <ProjectSearchBar @addProject={{@addProject}} />
+
+      <br>
+
+      <p class="text align center">
+        add another project right here
+      </p>
+    </div>
+  </div>
+
+</div>

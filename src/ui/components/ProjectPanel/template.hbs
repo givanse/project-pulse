@@ -1,6 +1,10 @@
+{{!
+  ProjectPanel is a View (as in MVC) that wrapps around ProjectSummary.
+}}
+
 {{#if project}}
   <ProjectSummary @project={{project}}
-                  @close={{action @close project.id}} />
+                  @close={{action @removeProject project.id}} />
 
   <a href="/p/{{project.id}}" data-navigo>
     <div class="ui bottom attached button center aligned">

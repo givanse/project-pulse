@@ -61,11 +61,15 @@ export default class ProjectPulse extends Component {
     this.initNavigation();
   }
 
+  // TODO: maybe push down to ProjectSummary?
+  //      I don't want to pass the router down though
   public removeProject(projectName: string) {
     const qs = navigation.removeProjectName(projectName);
     this.router.navigate(`/${qs}`);
   }
 
+  // TODO: maybe extract to ProjectSearchBar?
+  //      I don't want to pass the router down though
   public addProject(event) {
     const name = event.target.value.trim();
 
@@ -87,11 +91,6 @@ export default class ProjectPulse extends Component {
     event.target.value = '';
   }
 
-  public didInsertElement() {
-    const firstNode = this.bounds.firstNode;
-    this.populateSearchInput(firstNode);
-  }
-
   public didUpdate() {
     this.router.updatePageLinks();
   }
@@ -101,7 +100,7 @@ export default class ProjectPulse extends Component {
     this.router = new Navigo(location.origin, useHash);
 
     this.router.on('/', () => {
-      this.projectNames = navigation.getProjectNamesFromQs();
+      this.projectNames = navigation.getProjectNamesFromQueryString();
       this.projectId = null;
     })
     .on('/p/:projectId', (params) => { this.projectId = params.projectId; })
@@ -109,14 +108,6 @@ export default class ProjectPulse extends Component {
 
     this.router.notFound(function() {
       this.status.c404 = true;
-    });
-  }
-
-  private populateSearchInput(node: Node) {
-    const $ = window.$ || (() => ({search: () => null}));
-    $(node)
-    .search({
-      source: names
     });
   }
 
