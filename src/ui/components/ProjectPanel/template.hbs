@@ -2,21 +2,13 @@
   ProjectPanel is a View (as in MVC) that wrapps around ProjectSummary.
 }}
 
-{{#if project}}
-  <ProjectSummary @project={{project}}
-                  @close={{action @removeProject project.id}} />
-
-  <a href="/p/{{project.id}}" data-navigo>
-    <div class="ui bottom attached button center aligned">
-
-      <i class="github icon large"
-        title="github repositories"></i>
-      {{project.repos.length}} Repos
-
-    </div>
-  </a>
-{{else}}
-  <br>
-  <div class="ui active centered inline loader middle aligned"></div>
-  <br>
-{{/if}}
+<div class="project-panel">
+  {{#if project}}
+    <ProjectSummary @project={{project}}
+                    @close={{action @removeProject project.id}} />
+  {{else}}
+    <br>
+    <div class="ui active centered inline loader middle aligned"></div>
+    <br>
+  {{/if}}
+</div>

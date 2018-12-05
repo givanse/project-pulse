@@ -1,23 +1,26 @@
-<div class="content project-summary">
+<div id="project-summary" class="content">
   {{#if @close}}
     <i class="right floated times circle outline icon large"
       title="remove project"
       onclick={{@close}}></i>
   {{/if}}
-  <div class="header capitalize">{{@project.name}}</div>
+
+  <a href="/p/{{@project.id}}" class="header capitalize" data-navigo>
+    {{@project.name}}
+  </a>
 
   <div class="ui divider"></div>
 
-  <i class="fork icon"></i>
+  <i class="fork icon" title="forks"></i>
   {{ipad @project.forkCount 4}}
   <br>
-  <i class="history icon"></i>
+  <i class="history icon" title="commits"></i>
   {{ipad @project.commits 4}}
   <br>
-  <i class="star outline icon"></i>
+  <i class="star outline icon" title="stargazers"></i>
   {{ipad @project.stargazers 4}}
   <br>
-  <i class="eye icon"></i>
+  <i class="eye icon" title="watchers"></i>
   {{ipad @project.watchers 4}}
   <br>
   <i class="exclamation circle icon green" title="open issues"></i>
@@ -29,4 +32,9 @@
   {{ipad @project.prsOpen 4}}
   <i class="pull request icon red" title="closed pull requests">PR</i>
   {{ipad @project.prsClosed 4}}
+
+  <br>
+  <i class="github icon large" title="github repositories"></i>
+  {{@project.repos.length}}
+
 </div>

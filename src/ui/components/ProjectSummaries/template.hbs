@@ -1,4 +1,5 @@
-<div class="ui cards">
+<div id="project-summaries" class="ui cards">
+  
   {{#each @projectNames key="id" as |project|}}
     <div class="card">
       <ProjectPanel @projectName={{project.name}}

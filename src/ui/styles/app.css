@@ -61,10 +61,43 @@ footer {
 }
 
 /**
+ * Repo Summary 
+ */
+ .ui.card>.content.mute-data,
+ .ui.cards>.card>.content.mute-data {
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent, transparent 10px,
+      #ededed 10px,
+      #ededed 11px),
+    repeating-linear-gradient(
+      -45deg,
+      transparent, transparent 10px,
+      #ededed 10px,
+      #ededed 11px);
+}
+.ui.card>.content.mute-data>.description,
+.ui.cards>.card>.content.mute-data>.description {
+  color:#7b7b7b;
+}
+.content.mute-data>.description>i.red.icon,
+.content.mute-data>.description>i.green.icon {
+  color:#7b7b7b!important;
+}
+
+/**
  * Project Summary
  */
 .project-summary {
-  height: 200px;
+  height: 215px;
+}
+
+.project-summary a .header {
+  color: #000;
+}
+.project-summary a .header:hover {
+  color: #3e397f;
 }
 
 /**

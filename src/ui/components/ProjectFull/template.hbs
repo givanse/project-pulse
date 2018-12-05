@@ -1,4 +1,4 @@
-<div class="ui content">
+<div id="project-full" class="ui content">
   <div class="ui segment">
     <h2 class="ui header">
       <span class="capitalize">{{project.name}}</span>
@@ -81,9 +81,7 @@
   <div class="ui cards">
     {{#each project.repos key="nameWithOwner" as |repo|}}
       <div class="card">
-        <div class="content">
-          <RepoSummary @repo={{repo}} />
-        </div>
+        <RepoSummary @repo={{repo}} />
       </div>
     {{/each}}
   </div>

@@ -5,7 +5,7 @@ import { humanFriendly } from '../../../utils/name-helpers';
 export default class ProjectPanel extends Component {
 
   @tracked private project: any = null;
-
+  
   constructor(options) {
     super(options);
     this.fetchProject(this.args.projectName);
