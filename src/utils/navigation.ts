@@ -1,18 +1,21 @@
 import {buildUniqueProjectDesc} from './index';
 import {computerFriendly} from './name-helpers';
 
-function replaceStateWithQs(): any {
-  const qs = window.location.search;
-
-  if (!qs) {
-    return null;
-  }
-
+function pushStateWithQueryString(projectName: string): any {
   const state = {
-    projectNames: getProjectNamesFromQueryString()
+    projectNames: getProjectNamesFromQueryString(),
+    path: '',
   };
-  history.replaceState(state, '', qs);
-  return state;
+
+  const projectDesc = buildUniqueProjectDesc(projectName);
+  state.projectNames.push(projectDesc);
+  //state.projectNames.push(projectName);
+
+  const queryString = window.location.search;
+  state.path = queryString + ',' + projectName;
+  window.history.pushState(state, null, state.path);
+
+  return projectDesc;
 }
 
 function buildQs(projectNames: any[]): string {
@@ -61,4 +64,5 @@ function removeProjectName(target: string): string {
 export default {
   getProjectNamesFromQueryString,
   removeProjectName,
+  pushStateWithQueryString,
 };

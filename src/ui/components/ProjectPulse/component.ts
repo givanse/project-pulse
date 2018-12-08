@@ -11,12 +11,17 @@ for (const obj of names) {
   obj.title = humanFriendly(obj.title);
 }
 
+interface ProjectDesc {
+  id: number;
+  name: string;
+}
+
 export default class ProjectPulse extends Component {
 
   private router;
   @tracked private invalidName: string;
   @tracked private projectId: string;
-  @tracked private projectNames: any[];
+  @tracked private projectNames: ProjectDesc[];
 
   @tracked('projectNames') get projectNamesHuman(): string[] {
     const arr = [];
@@ -35,6 +40,7 @@ export default class ProjectPulse extends Component {
     return arr;
   }
 
+  //TODO: maybe just use history.back()
   @tracked('projectNames') get projectNamesQs(): string {
     let str = '';
     if (!this.projectNames) {
@@ -68,20 +74,10 @@ export default class ProjectPulse extends Component {
     this.router.navigate(`/${qs}`);
   }
 
-  // TODO: maybe extract to ProjectSearchBar?
-  //      I don't want to pass the router down though
   public addProject(event) {
     const name = event.target.value.trim();
 
-    let validName = false;
-    for (const obj of names) {
-      if (obj.title === name) {
-        validName = true;
-        break;
-      }
-    }
-
-    if (validName) {
+    if (this.isValidProjectName(name)) {
       this.invalidName = undefined;
       this._addProject(name);
     } else {
@@ -93,6 +89,16 @@ export default class ProjectPulse extends Component {
 
   public didUpdate() {
     this.router.updatePageLinks();
+  }
+
+  private isValidProjectName(name) {
+    for (const obj of names) {
+      if (obj.title === name) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   private initNavigation() {
@@ -112,14 +118,19 @@ export default class ProjectPulse extends Component {
   }
 
   private _addProject(projectName: string): void {
+
     projectName = computerFriendly(projectName);
-    let qs;
-    if (window.location.search) {
-      qs = window.location.search + `,${projectName}`;
+
+    let queryString = window.location.search;
+    if (queryString) {
+      const projectDesc = navigation.pushStateWithQueryString(projectName);
+      this.projectNames = navigation.getProjectNamesFromQueryString(); 
+      //TODO: this would be better, but the Glimmer docs are lacking ATM
+      //this.projectNames.push(projectDesc);
     } else {
-      qs = `?projectNames=${projectName}`;
+      queryString = `?projectNames=${projectName}`;
+      this.router.navigate(`/${queryString}`);
     }
-    this.router.navigate(`/${qs}`);
   }
 
 }
