@@ -40,7 +40,7 @@ export default class ProjectPulse extends Component {
     return arr;
   }
 
-  //TODO: maybe just use history.back()
+  // TODO: maybe just use history.back()
   @tracked('projectNames') get projectNamesQs(): string {
     let str = '';
     if (!this.projectNames) {
@@ -67,11 +67,13 @@ export default class ProjectPulse extends Component {
     this.initNavigation();
   }
 
-  // TODO: maybe push down to ProjectSummary?
-  //      I don't want to pass the router down though
-  public removeProject(projectName: string) {
-    const qs = navigation.removeProjectName(projectName);
-    this.router.navigate(`/${qs}`);
+  @tracked('projectNames') get isProjectSummaries(): boolean {
+    return !!window.location.search;
+  }
+
+  public removeProject(projectDesc: ProjectDesc) {
+    this._removeProject(projectDesc);
+    navigation.pushStateRemoveProjectName(this.projectNames);
   }
 
   public addProject(event) {
@@ -89,6 +91,25 @@ export default class ProjectPulse extends Component {
 
   public didUpdate() {
     this.router.updatePageLinks();
+  }
+
+  private _removeProject(projectDesc: ProjectDesc): void {
+    let index = null;
+    let i;
+    for (i = 0; i < this.projectNames.length; i++) {
+      const pDesc = this.projectNames[i];
+      if (projectDesc.id === pDesc.id) {
+        index = i;
+        break;
+      }
+    }
+
+    if (index === null) {
+      return;
+    }
+
+    this.projectNames.splice(index, 1);
+    this.projectNames = this.projectNames; // this isn't a NOOP
   }
 
   private isValidProjectName(name) {
@@ -123,10 +144,9 @@ export default class ProjectPulse extends Component {
 
     let queryString = window.location.search;
     if (queryString) {
-      const projectDesc = navigation.pushStateWithQueryString(projectName);
-      this.projectNames = navigation.getProjectNamesFromQueryString(); 
-      //TODO: this would be better, but the Glimmer docs are lacking ATM
-      //this.projectNames.push(projectDesc);
+      const projectDesc = navigation.pushStateAddProjectName(projectName);
+      this.projectNames.push(projectDesc);
+      this.projectNames = this.projectNames; // this isn't a NOOP
     } else {
       queryString = `?projectNames=${projectName}`;
       this.router.navigate(`/${queryString}`);

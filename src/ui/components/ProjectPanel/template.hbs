@@ -5,7 +5,7 @@
 <div class="project-panel">
   {{#if project}}
     <ProjectSummary @project={{project}}
-                    @close={{action @removeProject project.id}} />
+                    @close={{action @removeProject @projectDesc}} />
   {{else}}
     <br>
     <div class="ui active centered inline loader middle aligned"></div>

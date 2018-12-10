@@ -1,8 +1,8 @@
 <div id="project-summaries" class="ui cards">
   
-  {{#each @projectNames key="id" as |project|}}
+  {{#each @projectNames key="id" as |projectDesc|}}
     <div class="card">
-      <ProjectPanel @projectName={{project.name}}
+      <ProjectPanel @projectDesc={{projectDesc}}
                     @removeProject={{@removeProject}} />
     </div>
   {{/each}}

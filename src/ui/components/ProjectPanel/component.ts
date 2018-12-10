@@ -5,10 +5,10 @@ import { humanFriendly } from '../../../utils/name-helpers';
 export default class ProjectPanel extends Component {
 
   @tracked private project: any = null;
-  
+
   constructor(options) {
     super(options);
-    this.fetchProject(this.args.projectName);
+    this.fetchProject(this.args.projectDesc.name);
   }
 
   private async fetchProject(projectName: string): Promise<void> {

@@ -23,7 +23,7 @@
         </div>
       </a>
 
-    {{else if projectNames}}
+    {{else if isProjectSummaries}}
 
       <ProjectSearchBar @addProject={{action addProject}} />
 
@@ -54,7 +54,7 @@
 
   {{#if projectId}}
     <ProjectFull @projectId={{projectId}} />
-  {{else if projectNames.length}}
+  {{else if isProjectSummaries}}
     <ProjectSummaries @projectNames={{projectNames}}
                       @addProject={{action addProject}}
                       @removeProject={{action removeProject}} />
