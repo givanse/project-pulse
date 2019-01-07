@@ -7,18 +7,21 @@
     "test": "tests"
   },
   "scripts": {
-    "full-build": "ember build -prod",
+    "build": "ember build -prod",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "test:server": "ember test --server",
+    "lint:ts": "tslint -c tslint.json 'src/**/*.ts' -t codeFrame",
+    "test-dbg": "node --nolazy --inspect-brk=9229 ./node_modules/.bin/ember test"
   },
   "devDependencies": {
-    "@glimmer/application": "^0.9.1",
-    "@glimmer/application-pipeline": "^0.10.0",
-    "@glimmer/blueprint": "~0.9.1",
-    "@glimmer/component": "^0.9.1",
+    "@glimmer/application": "^0.13.0",
+    "@glimmer/application-pipeline": "^0.13.0",
+    "@glimmer/blueprint": "~0.13.0",
+    "@glimmer/component": "^0.13.0",
     "@glimmer/inline-precompile": "^1.0.0",
     "@glimmer/resolver": "^0.4.1",
-    "@glimmer/test-helpers": "^0.30.3",
+    "@glimmer/test-helpers": "^0.31.1",
     "@types/qunit": "^2.0.31",
     "broccoli-asset-rev": "^2.5.0",
     "broccoli-concat": "^3.5.1",
@@ -31,11 +34,13 @@
     "express": "^4.8.5",
     "glob": "^4.0.5",
     "graphql-request": "^1.8.2",
+    "json-typescript": "^1.1.0",
     "lodash.pick": "^4.4.0",
     "mkdirp": "^0.5.1",
     "morgan": "^1.3.2",
     "navigo": "^7.1.2",
     "node-fetch": "^2.2.0",
+    "pretender": "2.1.1",
     "qunitjs": "^2.3.3",
     "semantic-ui-css": "^2.3.3",
     "typescript": "~2.6.0"

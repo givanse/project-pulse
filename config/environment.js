@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'project-pulse',
     environment,
-    rootURL: '/',
+    //rootURL: '/',
   };
 
   return ENV;

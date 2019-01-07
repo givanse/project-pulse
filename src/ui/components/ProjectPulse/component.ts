@@ -23,7 +23,8 @@ export default class ProjectPulse extends Component {
   @tracked private projectId: string;
   @tracked private projectNames: ProjectDesc[];
 
-  @tracked('projectNames') get projectNamesHuman(): string[] {
+  @tracked
+  get projectNamesHuman(): string[] {
     const arr = [];
     if (!this.projectNames) {
       if (this.projectId) {
@@ -41,7 +42,8 @@ export default class ProjectPulse extends Component {
   }
 
   // TODO: maybe just use history.back()
-  @tracked('projectNames') get projectNamesQs(): string {
+  @tracked
+  get projectNamesQs(): string {
     let str = '';
     if (!this.projectNames) {
       if (this.projectId) {
@@ -67,7 +69,8 @@ export default class ProjectPulse extends Component {
     this.initNavigation();
   }
 
-  @tracked('projectNames') get isProjectSummaries(): boolean {
+  @tracked
+  get isProjectSummaries(): boolean {
     return !!window.location.search;
   }
 

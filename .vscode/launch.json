@@ -11,6 +11,18 @@
       "name": "generate jsons",
       "runtimeExecutable": "/Users/givanse/.nvm/versions/node/v8.11.3/bin/node",
       "program": "${workspaceFolder}/lib/generate-jsons.js"
+    },
+    {
+      "name": "test-dbg",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run-script",
+        "test-dbg"
+      ],
+      "port": 9229
     }
   ]
 }
