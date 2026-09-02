@@ -1,0 +1,24 @@
+# Inspected 2026-09-02: no netlify.toml on master. Site is the repo root
+# (Glimmer / Ember CLI → dist). Do not invent Base directory / Build command /
+# Publish directory here — leftover Netlify UI values stay the live build path.
+# skip_prs is already true. Do not set stop_builds (that also blocks
+# Trigger deploy and build hooks).
+#
+# Canonical live URL: https://ccp.givan.se  (Netlify site project-pulse)
+
+[build]
+  # Runs from the base directory (repo root unless UI leftover sets Base).
+  # Script git -C's to $NETLIFY_REPO_PATH (else . or ..) so pathspecs are
+  # repo-relative. Exit 0 skip / 1 build. Build hooks bypass ignore.
+  ignore = "bash ./scripts/netlify-ignore.sh"
+
+# Always skip Deploy Previews (every PR). skip_prs is already true in the
+# dashboard; this is the toml twin. Optional UI: Project configuration →
+# Build & deploy → Continuous Deployment → Branches and deploy contexts →
+# Configure → disable Deploy Previews.
+[context.deploy-preview]
+  ignore = "exit 0"
+
+# No branch-deploy workflow in this repo; skip those too (credits).
+[context.branch-deploy]
+  ignore = "exit 0"
