@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Netlify [build] ignore: skip when the Glimmer site did not change.
-# Simulates Netlify running the script from base (repo root, or a leftover
-# UI base subdirectory). No live Netlify. Exit 0 = skip, exit 1 = continue.
+# Simulates Netlify running the script from base (repo root, or a
+# subdirectory). No live Netlify. Exit 0 = skip, exit 1 = continue.
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
@@ -98,7 +98,7 @@ assert_eq "$(run_ignore "" "" "$fx" "$fx")" 1 "both refs unset"
 assert_eq "$(run_ignore "$cached" "" "$fx" "$fx")" 1 "COMMIT_REF unset"
 assert_eq "$(run_ignore "" "$cached" "$fx" "$fx")" 1 "CACHED_COMMIT_REF unset"
 
-section "equal refs fail open (Trigger deploy / empty cache)"
+section "equal refs fail open (same-SHA retry / empty cache)"
 assert_eq "$(run_ignore "$cached" "$cached" "$fx" "$fx")" 1 "equal SHAs"
 
 section "README / Travis / tests skip"
@@ -119,16 +119,16 @@ assert_eq "$(run_ignore "$pub" "$pkg" "$fx" "$fx")" 1 "package.json"
 toml="$(commit_file "$fx" "netlify.toml" "[build]"$'\n'"ignore = \"x\""$'\n' "toml")"
 assert_eq "$(run_ignore "$pkg" "$toml" "$fx" "$fx")" 0 "toml-only skip (no prod deploy just for toml)"
 
-section "honor leftover base cwd + NETLIFY_REPO_PATH"
-mkdir -p "$fx/leftover-base"
+section "honor base cwd + NETLIFY_REPO_PATH"
+mkdir -p "$fx/pkg-base"
 naive=0
-git -C "$fx/leftover-base" diff --quiet "$pub" "$pkg" -- . || naive=$?
-assert_eq "$naive" 0 "sanity: git diff . from leftover base misses root package.json"
+git -C "$fx/pkg-base" diff --quiet "$pub" "$pkg" -- . || naive=$?
+assert_eq "$naive" 0 "sanity: git diff . from a subdirectory misses root package.json"
 
-assert_eq "$(run_ignore "$pub" "$pkg" "__unset__" "$fx/leftover-base")" 1 \
-  "NETLIFY_REPO_PATH unset, cwd leftover-base, root package.json change must BUILD"
-assert_eq "$(run_ignore "$pub" "$pkg" "$fx" "$fx/leftover-base")" 1 \
-  "NETLIFY_REPO_PATH set, cwd leftover-base, root package.json change must BUILD"
+assert_eq "$(run_ignore "$pub" "$pkg" "__unset__" "$fx/pkg-base")" 1 \
+  "NETLIFY_REPO_PATH unset, cwd subdirectory, root package.json change must BUILD"
+assert_eq "$(run_ignore "$pub" "$pkg" "$fx" "$fx/pkg-base")" 1 \
+  "NETLIFY_REPO_PATH set, cwd subdirectory, root package.json change must BUILD"
 assert_eq "$(run_ignore "$tests" "$src" "__unset__" "$fx")" 1 \
   "NETLIFY_REPO_PATH unset, cwd repo root, src change must BUILD"
 

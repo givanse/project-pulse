@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
-# Skip production Netlify builds when the Glimmer site did not change.
+# Skip production Netlify git builds when the Glimmer site did not change.
 #
 # Netlify [build] ignore (exit 0 = skip, exit 1 = continue build).
 # This command runs FROM THE BASE DIRECTORY. There is no toml `base` (site is
-# the repo root), but a leftover UI Base directory would shift cwd. Diff
-# pathspecs are resolved with git -C against the repo root ($NETLIFY_REPO_PATH,
-# else . if we already look like the repo, else ..). A naive `git diff … .`
-# from a leftover base would miss root package.json / ember-cli-build.js.
+# the repo root). Diff pathspecs are resolved with git -C against the repo
+# root ($NETLIFY_REPO_PATH, else . if we already look like the repo, else ..).
+# A naive `git diff … .` from a subdirectory would miss root package.json /
+# ember-cli-build.js.
 #
-# Fail open to BUILD (exit 1) when refs are missing, equal (Trigger deploy /
-# empty cache), or git cannot resolve them. Do not always-skip the UI.
+# Fail open to BUILD (exit 1) when refs are missing, equal (same-SHA git
+# retry / empty cache), or git cannot resolve them.
+# Intentional ship is `netlify deploy --prod` or a build-hook POST (CLI);
+# those do not use this ignore. Do not set stop_builds.
 set -u
 
 cached="${CACHED_COMMIT_REF:-}"
@@ -19,7 +21,7 @@ if [[ -z "$cached" || -z "$commit" ]]; then
   exit 1
 fi
 
-# Same SHA: first build, cleared cache, or Deploys → Trigger deploy.
+# Same SHA: first git build, cleared cache, or same-SHA retry.
 # git diff --quiet would be empty and skip; we must not skip those.
 if [[ "$cached" == "$commit" ]]; then
   exit 1
@@ -49,7 +51,7 @@ fi
 
 # Paths that ship https://ccp.givan.se. README, Travis, tests, ignore
 # helpers, and toml-only ignore/config edits do not force a production
-# build (no prod deploy just to land toml).
+# git build. Squash-merge with [skip netlify] unless this merge is the ship.
 git -C "$repo" diff --quiet "$cached" "$commit" -- \
   src/ \
   public/ \

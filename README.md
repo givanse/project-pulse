@@ -32,36 +32,42 @@ You will need the following things properly installed on your computer.
 
 ## Explicit Netlify deploys (credits)
 
-Production deploys of https://ccp.givan.se (`project-pulse`) cost Netlify credits shared across this account (~15 per production deploy, 300/month). **Do not ship on every PR or every `master` push.**
+Production deploys of https://ccp.givan.se (`project-pulse`) cost Netlify credits shared across this account (~15 per production deploy, 300/month). **Do not ship on every PR or every `master` push.** Use the Netlify CLI (linked site), not the dashboard.
 
 **How to ship on purpose**
 
-- **Deploys → Trigger deploy** (top of the deploy list). Same-SHA retries fail open so path ignore does not skip this.
-- **Build hook** (bypasses ignore entirely): **Project configuration → Build & deploy → Continuous deployment → Build hooks** → **Add build hook**. `POST` that URL when you mean to publish.
+From the **repo root**, on the linked `project-pulse` site (`netlify status`).
 
-**What path ignore does (production / `master`)**
+```bash
+netlify status                 # confirm the linked project
+netlify deploy --prod          # local/CLI build + publish (ignore command does not apply)
+```
 
-`[build] ignore` runs `scripts/netlify-ignore.sh` from the **base directory** (repo root unless a leftover UI Base directory is set). The script `git -C`s to the repo root (`$NETLIFY_REPO_PATH`, else `.` or `..`) and skips (exit 0) when **none** of `src/`, `public/`, `lib/`, `config/`, `descriptors/`, `server/`, `ember-cli-build.js`, `package.json`, or `yarn.lock` changed between `$CACHED_COMMIT_REF` and `$COMMIT_REF`. README, Travis, tests, and toml-only ignore edits do **not** force a production build.
+If the site is not linked: `netlify link --name project-pulse`.
 
-Missing or equal git refs fail **open to BUILD** (exit 1) so **Deploys → Trigger deploy** is never silently skipped. [Build hooks ignore the ignore command](https://docs.netlify.com/build/configure-builds/ignore-builds/).
+**Or** POST a **build hook** (remote git build; [hooks bypass ignore](https://docs.netlify.com/build/configure-builds/ignore-builds/)):
 
-Path ignore **still allows a production build** when those site paths change on `master`. That is not “only when we click.”
+```bash
+netlify status                 # copy site id
+netlify api listSiteBuildHooks --data '{"site_id":"SITE_ID"}'
+curl -X POST -d {} "$HOOK_URL"
+```
+
+Do **not** `netlify deploy --prod` just to land an ignore-toml change. Path ignore is read from the commit used on the next intentional ship.
+
+**Merge / git CD:** squash-merge with `[skip netlify]` in the commit message **unless that merge is the intentional ship**. Landing ignore/docs on `master` should skip; shipping the Glimmer site should not.
+
+**What path ignore does (production / `master` git builds)**
+
+`[build] ignore` runs `scripts/netlify-ignore.sh` from the **base directory** (repo root). The script `git -C`s to the repo root (`$NETLIFY_REPO_PATH`, else `.` or `..`) and skips (exit 0) when **none** of `src/`, `public/`, `lib/`, `config/`, `descriptors/`, `server/`, `ember-cli-build.js`, `package.json`, or `yarn.lock` changed between `$CACHED_COMMIT_REF` and `$COMMIT_REF`. README, Travis, tests, and toml-only ignore edits do **not** force a production git build.
+
+Missing or equal git refs fail **open to BUILD** (exit 1) so a same-SHA retry or empty cache is not silently skipped. CLI `netlify deploy --prod` uploads a local build and does not use this ignore.
+
+Path ignore **still allows a git production build** when those site paths change on `master` without `[skip netlify]`. That is why squash-merge of this kind of change uses `[skip netlify]` unless it is the ship.
 
 **Deploy Previews and branch deploys**
 
-Toml always skips them (`[context.deploy-preview]` / `[context.branch-deploy]` `ignore = "exit 0"`). `skip_prs` is already true in the dashboard.
-
-**Leftover Netlify UI clicks**
-
-Toml already skips Deploy Previews and non-site production builds. Optional dashboard clicks:
-
-1. Confirm **Deploy Previews** stay off (`skip_prs` is already true): **Project configuration → Build & deploy → Continuous Deployment → Branches and deploy contexts** → **Configure** → disable **Deploy Previews** → **Save**.
-2. Path ignore **still auto-builds production** when site paths change on `master`. Click-only even then is a UI lever, not toml:
-   - **Deploys → Lock** to stop auto publishing — still **burns build credits**, only holds ccp.givan.se.
-   - **Project configuration → Build & deploy → Continuous deployment → Build settings** → **Configure** → **Build status** → **Stopped builds** — stops git, hooks, and Trigger deploy. **Do not use this** (`stop_builds` also blocks intentional deploys).
-3. Intentional UI ship (builds still Active): **Deploys → Trigger deploy**, or **Project configuration → Build & deploy → Continuous deployment → Build hooks** → **Add build hook**.
-
-Do **not** fill **Base directory** / **Build command** / **Publish directory** in the UI to match this toml (this file does not set those; leftover UI values remain the live build path). Do not Trigger deploy just to land an ignore-toml change; the next intentional UI ship picks up the committed config.
+Toml always skips them (`[context.deploy-preview]` / `[context.branch-deploy]` `ignore = "exit 0"`). `skip_prs` is already true (CLI). Keep `stop_builds` false. This repo has no branch-deploy workflow.
 
 ## Further Reading / Useful Links
 
