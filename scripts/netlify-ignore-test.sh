@@ -114,19 +114,21 @@ src="$(commit_file "$fx" "src/app.ts" "src2"$'\n' "ui")"
 assert_eq "$(run_ignore "$tests" "$src" "$fx" "$fx")" 1 "src/"
 pub="$(commit_file "$fx" "public/robots.txt" "ok2"$'\n' "public")"
 assert_eq "$(run_ignore "$src" "$pub" "$fx" "$fx")" 1 "public/"
+pkg="$(commit_file "$fx" "package.json" '{"name":"x"}'$'\n' "pkg")"
+assert_eq "$(run_ignore "$pub" "$pkg" "$fx" "$fx")" 1 "package.json"
 toml="$(commit_file "$fx" "netlify.toml" "[build]"$'\n'"ignore = \"x\""$'\n' "toml")"
-assert_eq "$(run_ignore "$pub" "$toml" "$fx" "$fx")" 1 "netlify.toml"
+assert_eq "$(run_ignore "$pkg" "$toml" "$fx" "$fx")" 0 "toml-only skip (no prod deploy just for toml)"
 
 section "honor leftover base cwd + NETLIFY_REPO_PATH"
 mkdir -p "$fx/leftover-base"
 naive=0
-git -C "$fx/leftover-base" diff --quiet "$pub" "$toml" -- . || naive=$?
-assert_eq "$naive" 0 "sanity: git diff . from leftover base misses root netlify.toml"
+git -C "$fx/leftover-base" diff --quiet "$pub" "$pkg" -- . || naive=$?
+assert_eq "$naive" 0 "sanity: git diff . from leftover base misses root package.json"
 
-assert_eq "$(run_ignore "$pub" "$toml" "__unset__" "$fx/leftover-base")" 1 \
-  "NETLIFY_REPO_PATH unset, cwd leftover-base, root toml change must BUILD"
-assert_eq "$(run_ignore "$pub" "$toml" "$fx" "$fx/leftover-base")" 1 \
-  "NETLIFY_REPO_PATH set, cwd leftover-base, root toml change must BUILD"
+assert_eq "$(run_ignore "$pub" "$pkg" "__unset__" "$fx/leftover-base")" 1 \
+  "NETLIFY_REPO_PATH unset, cwd leftover-base, root package.json change must BUILD"
+assert_eq "$(run_ignore "$pub" "$pkg" "$fx" "$fx/leftover-base")" 1 \
+  "NETLIFY_REPO_PATH set, cwd leftover-base, root package.json change must BUILD"
 assert_eq "$(run_ignore "$tests" "$src" "__unset__" "$fx")" 1 \
   "NETLIFY_REPO_PATH unset, cwd repo root, src change must BUILD"
 

@@ -6,7 +6,7 @@
 # the repo root), but a leftover UI Base directory would shift cwd. Diff
 # pathspecs are resolved with git -C against the repo root ($NETLIFY_REPO_PATH,
 # else . if we already look like the repo, else ..). A naive `git diff … .`
-# from a leftover base would miss root netlify.toml and skip UI-relevant config.
+# from a leftover base would miss root package.json / ember-cli-build.js.
 #
 # Fail open to BUILD (exit 1) when refs are missing, equal (Trigger deploy /
 # empty cache), or git cannot resolve them. Do not always-skip the UI.
@@ -47,8 +47,9 @@ if ! git -C "$repo" cat-file -e "${commit}^{commit}" 2>/dev/null; then
   exit 1
 fi
 
-# Paths that ship https://ccp.givan.se. README, Travis, tests, and this
-# ignore helper do not force a production build.
+# Paths that ship https://ccp.givan.se. README, Travis, tests, ignore
+# helpers, and toml-only ignore/config edits do not force a production
+# build (no prod deploy just to land toml).
 git -C "$repo" diff --quiet "$cached" "$commit" -- \
   src/ \
   public/ \
@@ -58,8 +59,7 @@ git -C "$repo" diff --quiet "$cached" "$commit" -- \
   server/ \
   ember-cli-build.js \
   package.json \
-  yarn.lock \
-  netlify.toml
+  yarn.lock
 status=$?
 
 if [[ "$status" -eq 0 ]]; then
